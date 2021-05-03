@@ -1,0 +1,96 @@
+/* Variables  */
+$color-yellowBg: #F9C32F;
+$color-greenLBg: #6BB99B;
+$color-purpleBg: #8E60A2;
+$color-grayBg: #B9B8BC;
+$color-grayLBg: #EDF0EF;
+$color-grayHeaderBg: #F3F2F2;
+$color-grayBg: #828083;
+$color-grayDarkBg: #5C5B5D;
+
+$color-white: #FFFFFF;
+$color-yellowText: #F6B100;
+$color-orangeText: #E7612B;
+$color-grayDarkText: #605F5F;
+$color-grayDark: #3F3C3B;
+
+$color-orangeBtn: #E7612B;
+$color-greenBtn: #72B223;
+/* --------------- */
+
+.content {
+  width: 100%;
+  .section {
+    margin: 0 2rem;
+    .vh-50 {
+      width: 100%;
+      height: 50vh;
+    }
+  }
+  .section #qr{
+    background-color: $color-yellowBg;
+  }
+  .section #premios{
+    background-color: $color-greenLBg;
+  }
+  .section #mayores{
+    background-color: $color-purpleBg;
+  }
+  .section #socios{
+    background-color: $color-white;
+  }
+
+  .content_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    .text-yellow {
+      color: $color-yellowText;
+    }
+    .content_text {
+      width: 32%;
+      margin: 0 2rem;
+      padding: 2rem 0 0;
+      color: $color-white;
+      text-align: center;
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        padding-top: .5rem;
+      }
+      // .img_center {
+      //   margin: 1rem 0;
+      // }
+    }
+    img {
+      width: 12%;
+    }
+    .btnOrange_sm {
+      margin: 1rem auto;
+      width: fit-content;
+      padding: .1rem .5rem .15rem;
+      background-color: $color-orangeBtn;
+      border-radius: 8px;
+      .text_btnO{
+        color: $color-white;
+        margin: 0;
+        padding-top: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .btnOrange_lg {
+
+    }
+  }
+}
