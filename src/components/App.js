@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import SectionGray from './SectionGray';
 import SectionPlaca from './SectionPlaca';
 import SectionGreen from './SectionGreen';
+import SectionPurple from './SectionPurple';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <SectionGray />
       <SectionPlaca />
       <SectionGreen />
+      <SectionPurple />
     </Container>
   );
 }

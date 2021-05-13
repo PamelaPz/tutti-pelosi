@@ -1,21 +1,20 @@
-import producto1 from '../assets/images/producto1.png';
-import producto2 from '../assets/images/producto2.png';
-import producto3 from '../assets/images/producto3.png';
+import dog2 from '../assets/images/dogs2.png';
+import producto1 from '../assets/images/producto5.png';
 import BtnOrange from './BtnOrange';
 import { Row, Col } from 'react-bootstrap';
 
-function SectionGreen() {
+function SectionPurple() {
   return(
     <>
       <Row>
-          <Col className="gb-gray container-peludo p-0">
-            <div className="shape-paralelo"></div>
+          <Col className="container-fortaleza p-0">
+            <div className="shape-paraleloPurple"></div>
             <Row>
                 <Col lg="12" className=" p-0">
                     <div className="content-title">
                         <div className="d-flex justify-content-center">
                             <div className="content_text">
-                                <p className="title_peludo">Para <span>consentir</span> a tu <span>Peludo</span></p>
+                                <p className="title_peludo">Recupera la <span>Fortaleza</span> de tu <span>Peludo</span></p>
                             </div>
                         </div>
                     </div>
@@ -23,15 +22,12 @@ function SectionGreen() {
             </Row>
             <Row>
                 <Col lg="12" className=" p-0">
-                    <div className="content-gridImg">
+                    <div className="content-img">
                         <div className="p-0">
-                            <div className="img_grid"><img src={producto1} id="img_left" alt=""/></div>
+                            <div className="img_grid"><img src={dog2} id="img_dogs" alt=""/></div>
                         </div>
                         <div className="p-0">
-                            <div className="img_grid"><img src={producto2} alt=""/></div>
-                        </div>
-                        <div className="p-0">
-                            <div className="img_grid"><img src={producto3} id="img_right" alt=""/></div>
+                            <div className="img_grid"><img src={producto1} id="img_bag" alt=""/></div>
                         </div>
                     </div>
                 </Col>
@@ -59,4 +55,4 @@ function SectionGreen() {
   );
 }
 
-export default SectionGreen; 
+export default SectionPurple; 

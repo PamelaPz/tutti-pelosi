@@ -1,14 +1,8 @@
 import dog from '../assets/images/dogs1.png';
-import dog2 from '../assets/images/dogs2.png';
 import circle1 from '../assets/images/circle-perfil.png';
 import circle2 from '../assets/images/circle-registrarse.png';
 import cel2 from '../assets/images/cel-qr2.png';
 import medalla1 from '../assets/images/medalla-qr1.png';
-import producto1 from '../assets/images/producto1.png';
-import producto2 from '../assets/images/producto2.png';
-import producto3 from '../assets/images/producto3.png';
-import producto4 from '../assets/images/producto4.png';
-import producto5 from '../assets/images/producto5.png';
 import BtnOrange from './BtnOrange';
 import { Row, Col } from 'react-bootstrap';
 
