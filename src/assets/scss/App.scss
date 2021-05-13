@@ -1,22 +1,199 @@
-/* Variables  */
+@import "~bootstrap/scss/bootstrap";
+
+/* ---- Variables ---- */
 $color-yellowBg: #F9C32F;
 $color-greenLBg: #6BB99B;
 $color-purpleBg: #8E60A2;
 $color-grayBg: #B9B8BC;
 $color-grayLBg: #EDF0EF;
 $color-grayHeaderBg: #F3F2F2;
-$color-grayBg: #828083;
+$color-grayMediumBg: #828083;
 $color-grayDarkBg: #5C5B5D;
 
 $color-white: #FFFFFF;
-$color-yellowText: #F6B100;
+$color-yellowText: #F9C32F;
 $color-orangeText: #E7612B;
 $color-grayDarkText: #605F5F;
 $color-grayDark: #3F3C3B;
+$color-green: #AEC81B;
 
 $color-orangeBtn: #E7612B;
 $color-greenBtn: #72B223;
-/* --------------- */
+
+/* Fonts */
+@font-face {
+  font-family: Tungsten-Black;
+  src: url('../fonts/Tungsten\ Rounded\ Black.otf');
+}
+@font-face {
+  font-family: Tungsten-Bold;
+  src: url('../fonts/Tungsten\ Rounded\ Bold.otf');
+}
+@font-face {
+  font-family: Tungsten-SemiBold;
+  src: url('../fonts/Tungsten\ Rounded\ SemiBold.otf');
+}
+@font-face {
+  font-family: Tungsten-Medium;
+  src: url('../fonts/Tungsten\ Rounded\ Medium.otf');
+}
+@font-face {
+  font-family: Tungsten-Book;
+  src: url('../fonts/Tungsten\ Rounded\ Book.otf');
+}
+@font-face {
+  font-family: Tungsten-Light;
+  src: url('../fonts/Tungsten\ Rounded\ Light.otf');
+}
+/* bg-color */
+.gb-gray {
+  background-color: $color-grayLBg;
+}
+
+/* --- Estilos para textos --- */
+.text-yellow {
+  color: $color-yellowText;
+}
+
+.super-title {
+  font-size: 4.2rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: Tungsten-Bold;
+}
+.p-principal {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  font-family: Tungsten-SemiBold;
+}
+.title_socio {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: Tungsten-Book;
+  span {
+    display: block;
+    line-height: .8;
+    font-size: 6.8rem;
+    font-family: Tungsten-SemiBold;
+  }
+}
+.p-product {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  font-family: Tungsten-Book;
+  span {
+    color: $color-orangeText;
+    font-family: Tungsten-Bold;
+  }
+}
+.p-dark {
+  color: $color-grayDarkText;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: 3px;
+  font-family: Tungsten-Medium;
+  span {
+    font-family: Tungsten-Bold;
+  }
+}
+.p-circle {
+  color: $color-orangeText;
+  margin: 0;
+  padding: 0;
+  font-size: 2.6rem;
+  line-height: 1;
+  letter-spacing: 3px;
+  font-family: Tungsten-SemiBold;
+}
+
+/* ---- Btns ---- */
+.btnOrange_sm {
+  margin: 1rem auto;
+  width: fit-content;
+  padding: .1rem 1.5rem .3rem;
+  background-color: $color-orangeBtn;
+  border-radius: .7rem;
+  .text_btnO{
+    color: $color-white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.9rem;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-family: Tungsten-Book;
+  }
+}
+.btnOrange_lg {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 75%;
+  padding: .2rem 0;
+  background-color: $color-orangeBtn;
+  border-radius: .9rem;
+  .text_btnO{
+    color: $color-white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Tungsten-SemiBold;
+  }
+}
+.btnGreen_xl {
+  width: fit-content;
+  margin: auto;
+  padding: .2rem 5rem;
+  background-color: $color-greenBtn;
+  border-radius: .9rem;
+  border: 3px solid $color-white;
+  .text_btnO{
+    color: $color-white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Tungsten-SemiBold;
+  }
+}
+.btnGreen_sm {
+  width: fit-content;
+  margin: auto auto 6rem;
+  padding: .2rem 2.5rem;
+  background-color: $color-greenBtn;
+  border-radius: .9rem;
+  border: 3px solid $color-white;
+  .text_btnO{
+    color: $color-white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1.9rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    font-family: Tungsten-SemiBold;
+  }
+}
+/* ------------------------- */
 
 .content {
   width: 100%;
@@ -24,73 +201,320 @@ $color-greenBtn: #72B223;
     margin: 0 2rem;
     .vh-50 {
       width: 100%;
-      height: 50vh;
+      height: 70vh;
     }
   }
-  .section #qr{
-    background-color: $color-yellowBg;
-  }
-  .section #premios{
-    background-color: $color-greenLBg;
-  }
-  .section #mayores{
-    background-color: $color-purpleBg;
-  }
-  .section #socios{
-    background-color: $color-white;
-  }
-
   .content_info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-end;
     height: inherit;
-    .text-yellow {
-      color: $color-yellowText;
-    }
     .content_text {
-      width: 32%;
-      margin: 0 2rem;
-      padding: 2rem 0 0;
       color: $color-white;
       text-align: center;
       height: inherit;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
-      h2 {
-        font-size: 2.5rem;
-      }
-      p {
-        width: 70%;
-        margin: 0 auto;
-        font-size: 1.1rem;
-        padding-top: .5rem;
-      }
-      // .img_center {
-      //   margin: 1rem 0;
-      // }
-    }
-    img {
-      width: 12%;
-    }
-    .btnOrange_sm {
-      margin: 1rem auto;
-      width: fit-content;
-      padding: .1rem .5rem .15rem;
-      background-color: $color-orangeBtn;
-      border-radius: 8px;
-      .text_btnO{
-        color: $color-white;
-        margin: 0;
-        padding-top: 0;
-        width: 100%;
-        text-align: center;
-      }
-    }
-    .btnOrange_lg {
-
+      justify-content: center;
     }
   }
+  .section #qr{
+    background-color: $color-yellowBg;
+    background-image: url('../images/vector-rectangulo.png'), url('../images/vector-rectangulo2.png');
+    background-position: left -.05cm top, right top;
+    background-repeat: no-repeat;
+    background-size: 13%, 11%;
+    .img_left {
+      position: relative;
+      img {
+        width: 96%;
+        position: absolute;
+        right: -3rem;
+        bottom: 0;
+      }
+    }
+    .img_center {
+      width: 50%;
+    }
+    .img_right {
+      position: relative;
+      img{
+        width: 65%;
+        position: absolute;
+        left: -3.5rem;
+        bottom: 0;
+      }
+    }
+  }
+  .section #premios{
+    background-color: $color-greenLBg;
+    background-image: url('../images/vector-bones.png'), url('../images/vector-bones2.png');
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+    background-size: 14%, 14%;
+    position: relative;
+    .content_info {
+      .content_text{
+        width: 80% !important;
+        margin: auto;
+        justify-content: space-around !important;
+      }
+    }
+    .img_left {
+      position: relative;
+      height: inherit;
+      img {
+        width: 112%;
+        position: absolute;
+        right: -7rem;
+        bottom: calc(50% - 10rem);
+      }
+    }
+    .img_right {
+      position: relative;
+      img{
+        width: 80%;
+        position: absolute;
+        left: -2rem;
+        bottom: 0;
+      }
+    }
+  }
+  .section #mayores{
+    background-color: $color-purpleBg;
+    background-image: url('../images/vector-circle.png'), url('../images/vector-circle2.png');
+    background-position: left -1.5cm top 1.5cm, right -.05cm top .5cm;
+    background-repeat: no-repeat;
+    background-size: 12%, 20%;
+    position: relative;
+    .content_info {
+      .content_text {
+        width: 100% !important;
+        margin: auto;
+        justify-content: space-around !important;
+      }
+    }
+    .img_left {
+      position: relative;
+      height: inherit;
+      img {
+        width: 120%;
+        position: absolute;
+        right: -8rem;
+        bottom: 4rem;
+      }
+    }
+    .img_right {
+      position: relative;
+      img{
+        width: 70%;
+        position: absolute;
+        left: -3rem;
+        bottom: 3.4rem;
+      }
+    }
+  }
+  .section #socios{
+    height: 76vh;
+    background-color: $color-white;
+    .content_info {
+      grid-template-columns: repeat(2, 1fr);
+      .content_text {
+        width: 60%;
+      }
+    }
+    .img_left {
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 3.5rem;
+      img {
+        width: 63%;
+      }
+    }
+  }
+
+  /* ---- Sección gris de productos ---- */
+  .content_producto {
+    width: 60%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .img_center {
+      width: 100%;
+      height: calc(100% - 12rem);
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      img{
+        width: 40%;
+        margin-bottom: 2rem;
+      }
+      img#bones {
+        width: 70%;
+        margin-bottom: 1rem;
+      }
+      img#carnaza {
+        width: 32%;
+        margin-bottom: 1rem;
+      }
+      img#pollo {
+        width: 80%;
+        margin-bottom: 1rem;
+      }
+      img#colageno {
+        width: 65%;
+        margin-bottom: 1rem;
+      }
+    }
+    .content_text {
+      width: 90%;
+      height: 12rem;
+      text-align: center;
+      color: $color-grayDarkText;
+      .p-product {
+        padding-bottom: .2rem;
+      }
+    }
+  }
+  .contentBtn {
+    padding: 3rem 0;
+  }
+
+  /* Seccion placa */
+  .container-placa {
+    height: inherit;
+    overflow: hidden;
+    .content_placa {
+      padding-top: 6rem;
+      padding-bottom: 2rem;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-start;
+      z-index: 5;
+      .img_left {
+        width: fit-content;
+        padding-top: 1rem;
+        img {
+          width: 75%;
+        }
+      }
+      .content_center {
+        position: relative;
+        width: 100%;
+        .content_text {
+          position: relative;
+          color: $color-white;
+          left: -4rem;
+          .img_up {
+            width: 100%;
+            height: 20rem;
+            position: relative;
+            margin-bottom: 3rem;
+            img {
+              position: absolute;
+              left: -3rem;
+              width: 60%;
+            }
+          }
+          #medalla-qr {
+            margin-bottom: 0;
+            height: 20rem;
+            img{
+              position: absolute;
+              left: 6rem;
+              width: 50%;
+            }
+          }
+        }
+      }
+      .shape-text {
+        width: 56%;
+        height: 24rem;
+        background-image: url('../images/cuadro-verde.png');
+        background-position: bottom ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .content_ul {
+          position: absolute;
+          top: .8rem;
+          left: 0.5rem;
+          padding: 2rem 4rem;
+          li {
+            list-style-type: '•';
+            &:last-child {
+              list-style-type: none;
+            }
+          }
+        }
+      }
+    }
+    .content_img {
+      width: fit-content;
+      position: relative;
+      .p-circle {
+        text-align: center;
+        width: 58%;
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+      }
+      .img_center {
+        position: relative;
+        top: -7rem;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      img {
+        width: 60%;
+      }
+      #circle-dog {
+        display: flex;
+        align-items: flex-end;
+        padding-right: 1rem;
+      }
+      #circle-qr {
+        padding-left: 4rem;
+      }
+    }
+  }
+  .shape {
+    position: absolute;
+    top: 5rem;
+    border-bottom: 99vw solid $color-yellowBg;
+    border-left: 18rem solid transparent;
+    border-right: 18rem solid transparent;
+    height: 100vh;
+    width: 100%;
+    transform: rotate(-90deg);
+    z-index: 1;
+  }
+  
+  .shape:before {
+    content: "";
+    position: absolute;
+    top: calc(100vw - 30rem);
+    left: -42rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 51rem 16rem 0;
+    border-color: transparent #EDF0EF transparent transparent;
+    transform: rotate(86deg);
+    z-index: 0;
+  }
+  
+  #parallelogram {
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: red;
+  }
 }
+
