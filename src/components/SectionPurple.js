@@ -7,7 +7,7 @@ function SectionPurple() {
   return(
     <>
       <Row>
-          <Col className="container-fortaleza p-0">
+          <Col className="container-fortaleza">
             <div className="shape-paraleloPurple"></div>
             <Row>
                 <Col lg="12" className=" p-0">
