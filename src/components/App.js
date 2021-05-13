@@ -7,11 +7,13 @@ import SectionGreen from './SectionGreen';
 import SectionPurple from './SectionPurple';
 import Contact from './Contact';
 import Footer from './Footer';
+import NavMenu from './NavMenu';
 
 
 function App() {
   return (
     <Container fluid className="content">
+      <NavMenu />
       <SectionsFifty />
       <SectionGray />
       <SectionPlaca />

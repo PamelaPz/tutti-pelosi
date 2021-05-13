@@ -10,6 +10,7 @@ $color-grayHeaderBg: #F3F2F2;
 $color-grayMediumBg: #828083;
 $color-grayDarkBg: #5C5B5D;
 $color-yellowO: rgba(246, 177, 0, .5);
+$color-grayMenu: #B9B8BC;
 
 $color-white: #FFFFFF;
 $color-yellowText: #F9C32F;
@@ -281,6 +282,40 @@ $color-greenBtn: #72B223;
       height: 70vh;
     }
   }
+
+  /*  Nav  */
+  .container-navmenu {
+    background-color: $color-grayHeaderBg;
+    padding: 0 5rem;
+    nav {
+      height: 7rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo_center {
+      text-align: center;
+      img {
+        width: 55%;
+        margin: auto;
+      }
+    }
+    .icon_menu {
+      font-size: 3.5rem;
+      color: $color-grayMenu;
+    }
+    .social_media {
+      .icon {
+        font-size: 3rem;
+        padding-right: .5rem;
+      }
+      a {
+        color: $color-grayMenu;
+      }
+    }
+  }
+
+
   .content_info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

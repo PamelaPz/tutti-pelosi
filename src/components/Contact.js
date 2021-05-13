@@ -3,7 +3,6 @@ import producto1 from '../assets/images/producto5.png';
 import BtnOrange from './BtnOrange';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsappSquare, faInstagramSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { Row, Col, Container, Form, Button } from 'react-bootstrap';
 
 function Contact() {

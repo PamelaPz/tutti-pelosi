@@ -1,4 +1,3 @@
-import BtnOrange from './BtnOrange';
 import { Row, Col, Container } from 'react-bootstrap';
 
 function Footer() {
