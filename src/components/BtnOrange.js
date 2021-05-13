@@ -1,7 +1,6 @@
 import '../assets/scss/App.scss'
-// import { Button } from "react-bootstrap";
 
-function BtnOrangeSm({link, classList, text, classText}) {
+function BtnOrange({link, classList, text, classText}) {
     return(
         <>
             <div className={classList}>
@@ -12,4 +11,4 @@ function BtnOrangeSm({link, classList, text, classText}) {
         </>
     );
 }
-export default BtnOrangeSm;
+export default BtnOrange;
