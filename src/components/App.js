@@ -3,6 +3,7 @@ import SectionsFifty from './SectionsFifty';
 import { Container } from 'react-bootstrap';
 import SectionGray from './SectionGray';
 import SectionPlaca from './SectionPlaca';
+import SectionGreen from './SectionGreen';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <SectionsFifty />
       <SectionGray />
       <SectionPlaca />
+      <SectionGreen />
     </Container>
   );
 }

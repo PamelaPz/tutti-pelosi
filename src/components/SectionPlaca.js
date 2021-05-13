@@ -67,7 +67,7 @@ function SectionPlaca() {
             </Row>
             <Row>
                 <Col className="gb-gray p-0">
-                    <div className="content_placa">
+                    <div className="content_circleDog">
                         <div className="d-flex justify-content-end p-0">
                             <div className="content_img">
                                 <div className="img_center" id="circle-dog">
