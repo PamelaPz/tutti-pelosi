@@ -1,5 +1,5 @@
-import dog2 from '../assets/images/dogs2.png';
-import producto1 from '../assets/images/producto6.png';
+import dog2 from '../../assets/images/dogs2.png';
+import producto1 from '../../assets/images/producto6.png';
 import BtnOrange from './BtnOrange';
 import { Row, Col } from 'react-bootstrap';
 

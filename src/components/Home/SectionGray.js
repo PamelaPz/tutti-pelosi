@@ -1,9 +1,8 @@
-import medalla1 from '../assets/images/medalla-1.png';
-import producto1 from '../assets/images/producto1.png';
-import producto3 from '../assets/images/producto3.png';
-import producto4 from '../assets/images/producto4.png';
-import producto5 from '../assets/images/producto5.png';
-import producto6 from '../assets/images/producto6.png';
+import medalla1 from '../../assets/images/medalla-1.png';
+import producto1 from '../../assets/images/producto1.png';
+import producto3 from '../../assets/images/producto3.png';
+import producto4 from '../../assets/images/producto4.png';
+import producto6 from '../../assets/images/producto6.png';
 import BtnOrange from './BtnOrange';
 import { Row, Col } from 'react-bootstrap';
 

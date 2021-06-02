@@ -69,6 +69,15 @@ $color-greenBtn: #64BC45;
   font-family: Tungsten-SemiBold !important;
 }
 
+.p-menu {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  font-family: Tungsten-SemiBold;
+}
 .super-title {
   font-size: 4rem;
   line-height: 1;
@@ -302,10 +311,17 @@ $color-greenBtn: #64BC45;
     font-family: Tungsten-SemiBold;
   }
 }
+.btnGreen_sm, .btnGreen_xl, .btnOrange_lg, .btnOrange_sm {
+  a {
+    color: $color-white;
+    text-decoration: none;
+  }
+}
 /* ------------------------- */
 
 .content {
   width: 100%;
+  margin-top: 7rem;
   .section {
     margin: 0 1rem;
     .vh-50 {
@@ -314,35 +330,69 @@ $color-greenBtn: #64BC45;
     }
   }
 
-  /*  Nav  */
-  .container-navmenu {
-    background-color: $color-grayHeaderBg;
-    padding: 0 5rem;
-    nav {
-      height: 7rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  .content-Menu {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    /*  Nav  */
+    .container-navmenu {
+      background-color: $color-grayHeaderBg;
+      padding: 0 5rem;
+      nav {
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo_center {
+        text-align: center;
+        img {
+          width: 55%;
+          margin: auto;
+        }
+      }
+      .icon_menu {
+        font-size: 3.5rem;
+        color: $color-grayMenu;
+      }
+      .social_media {
+        .icon {
+          font-size: 3rem;
+          padding-right: .5rem;
+        }
+        a {
+          color: $color-grayIcon;
+        }
+      }
     }
-    .logo_center {
+
+    /* Menu Modal */
+    .container-modal {
+      background-color: transparent;
       text-align: center;
-      img {
+      position: absolute;
+      top: 7rem;
+      z-index: 10;
+      .content_menu {
         width: 55%;
+        padding: 1.5rem 0;
         margin: auto;
+        background-color: $color-yellowText2;
+        .content_ul {
+          margin: 0;
+          padding: 0;
+          a {
+            color: $color-white;
+          }
+        }
       }
     }
-    .icon_menu {
-      font-size: 3.5rem;
-      color: $color-grayMenu;
+    .display-block {
+      display: block;
     }
-    .social_media {
-      .icon {
-        font-size: 3rem;
-        padding-right: .5rem;
-      }
-      a {
-        color: $color-grayIcon;
-      }
+    .display-none {
+      display: none;
     }
   }
 

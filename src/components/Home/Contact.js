@@ -1,6 +1,3 @@
-import dog2 from '../assets/images/dogs2.png';
-import producto1 from '../assets/images/producto5.png';
-import BtnOrange from './BtnOrange';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsappSquare, faInstagramSquare, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
 import { Row, Col, Container, Form, Button } from 'react-bootstrap';
@@ -45,9 +42,9 @@ function Contact() {
                                     <p className="p_contacto"><a href="mailto:Contacto@tuttipelosi.com">Contacto@tuttipelosi.com</a></p>
                                 </div>
                                 <div className="social_media">
-                                    <div className="icon"><a className=""><FontAwesomeIcon icon={faWhatsappSquare} /></a></div>
-                                    <div className="icon"><a className=""><FontAwesomeIcon icon={faInstagramSquare} /></a></div>
-                                    <div className="icon"><a className=""><FontAwesomeIcon icon={faFacebookSquare} /></a></div>
+                                    <div className="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191" className=""><FontAwesomeIcon icon={faWhatsappSquare} /></a></div>
+                                    <div className="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191" className=""><FontAwesomeIcon icon={faInstagramSquare} /></a></div>
+                                    <div className="icon"><a href="https://www.facebook.com/Tutti-Pelosi-100930825425191" className=""><FontAwesomeIcon icon={faFacebookSquare} /></a></div>
                                 </div>
                             </div>
                         </div>

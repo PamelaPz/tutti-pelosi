@@ -1,11 +1,11 @@
-import dog4 from '../assets/images/dogs4.png';
-import dog5 from '../assets/images/dogs5.png';
-import dog6 from '../assets/images/dogs6.png';
-import cel1 from '../assets/images/cel-qr.png';
-import medalla1 from '../assets/images/medalla-qr2.png';
-import premios from '../assets/images/producto-premios.png';
-import producto5 from '../assets/images/producto5.png';
-import circle3 from '../assets/images/circle-socio.png';
+import dog4 from '../../assets/images/dogs4.png';
+import dog5 from '../../assets/images/dogs5.png';
+import dog6 from '../../assets/images/dogs6.png';
+import cel1 from '../../assets/images/cel-qr.png';
+import medalla1 from '../../assets/images/medalla-qr2.png';
+import premios from '../../assets/images/producto-premios.png';
+import producto5 from '../../assets/images/producto5.png';
+import circle3 from '../../assets/images/circle-socio.png';
 
 import BtnOrange from './BtnOrange';
 import { Row, Col } from 'react-bootstrap';

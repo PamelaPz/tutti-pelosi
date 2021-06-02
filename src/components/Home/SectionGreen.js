@@ -1,6 +1,6 @@
-import producto1 from '../assets/images/producto1.png';
-import producto2 from '../assets/images/producto2.png';
-import producto3 from '../assets/images/producto3.png';
+import producto1 from '../../assets/images/producto1.png';
+import producto2 from '../../assets/images/producto2.png';
+import producto3 from '../../assets/images/producto3.png';
 import BtnOrange from './BtnOrange';
 import { Row, Col } from 'react-bootstrap';
 

@@ -1,27 +1,25 @@
-import '../assets/scss/App.scss';
-import SectionsFifty from './SectionsFifty';
-import { Container } from 'react-bootstrap';
-import SectionGray from './SectionGray';
-import SectionPlaca from './SectionPlaca';
-import SectionGreen from './SectionGreen';
-import SectionPurple from './SectionPurple';
-import Contact from './Contact';
-import Footer from './Footer';
-import NavMenu from './NavMenu';
-
+import Home from './Home'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
-    <Container fluid className="content">
-      {/* <NavMenu />
-      <SectionsFifty />
-      <SectionGray />
-      <SectionPlaca />
-      <SectionGreen />
-      <SectionPurple />
-      <Contact />
-      <Footer /> */}
-    </Container>
+    <Router>
+      <ModalSwitch />
+    </Router>
+  );
+}
+
+function ModalSwitch() {
+  return (
+    <div>
+      <Switch>
+        <Route path="/" children={<Home />} />
+      </Switch>
+    </div>
   );
 }
 

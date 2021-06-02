@@ -1,4 +1,5 @@
 import { Row, Col, Container } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 function Footer() {
   return(
@@ -12,10 +13,10 @@ function Footer() {
                             <p className="title_footer">Tutti Pelosi / 2021 /Todos los derechos reservados</p>
                             <div className="footer-nav">
                                 <ul>
-                                    <li className="p-footer"><a href="#">PLACA QR</a></li>
-                                    <li className="p-footer"><a href="#">HUESOS</a></li>
-                                    <li className="p-footer"><a href="#">PECHUGAS DE POLLO</a></li>
-                                    <li className="p-footer"><a href="#">PALITOS CARNASA DE POLLO</a></li>
+                                    <li className="p-footer"><Link to="/">PLACA QR</Link></li>
+                                    <li className="p-footer"><Link to="/">HUESOS</Link></li>
+                                    <li className="p-footer"><Link to="/">PECHUGAS DE POLLO</Link></li>
+                                    <li className="p-footer"><Link to="/">PALITOS CARNASA DE POLLO</Link></li>
                                 </ul>
                             </div>
                         </div>
