@@ -14,7 +14,7 @@ function Contact() {
                 <Row>
                     <Col lg="12" className=" p-0">
                         <div className="content-title">
-                            <p className="title_contact text-yellow2">Contáctanos resolvemos tus <span>Dudas</span></p>
+                            <p className="title_contact text-yellow2">Contactános <span>resolvemos tus Dudas</span></p>
                         </div>
                     </Col>
                 </Row>
@@ -31,7 +31,7 @@ function Contact() {
                                         <Form.Control type="email" placeholder="E-MAIL" />
                                     </Form.Group>
                                     <Form.Group controlId="exampleForm.ControlTextarea1">
-                                        <Form.Control as="textarea" rows={4} placeholder="MENSAJE"/>
+                                        <Form.Control as="textarea" rows={6} placeholder="MENSAJE"/>
                                     </Form.Group>
                                     <Button variant="primary" type="submit">
                                         ENVIAR
@@ -42,7 +42,7 @@ function Contact() {
                                 <p className="subtitle_contact">Tutti Pelosi <span>consiéntelo... cuidándolo</span></p>
                                 <div className="content_data">
                                     <p className="p_contacto">Queretaro, Qro.</p>
-                                    <p className="p_contacto"><a href="tel:4421234567">Tel. 442 123 4567</a></p>
+                                    <p className="p_contacto"><a href="mailto:Contacto@tuttipelosi.com">Contacto@tuttipelosi.com</a></p>
                                 </div>
                                 <div className="social_media">
                                     <div className="icon"><a className=""><FontAwesomeIcon icon={faWhatsappSquare} /></a></div>
@@ -53,9 +53,13 @@ function Contact() {
                         </div>
                     </Col>
                 </Row>
-                <Row className="gb-gray p-0">
-                    <Col>
-                        <BtnOrange link="#" classList="btnGreen_xl" classText="text_btnO" text="SABER MÁS"/>
+                <Row>
+                    <Col lg="12" className="p-0">
+                        <div className="container_nota">
+                            <p className="p-nota">
+                                <span>NOTA ACLARATORIA:</span> Las imágenes de las Identificaciones QR son sólo ilustrativas. <br/>
+                                El material y los colores pueden cambiar.</p>
+                        </div>
                     </Col>
                 </Row>
             </Container>

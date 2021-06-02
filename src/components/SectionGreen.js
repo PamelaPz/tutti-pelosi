@@ -42,7 +42,10 @@ function SectionGreen() {
                         <div className="d-flex justify-content-center">
                             <div className="content_text">
                                 <p className="subtitle_peludo">Productos Naturales y Saludables</p>
-                                <p className="p_peludo">irresistible carnasa de pollo, pechugas de pollo y huesos deshidratados</p>
+                                <p className="p_peludo">
+                                    Productos Naturales y Saludables <br />
+                                    Irresistible Carnaza de Pollo, Pechugas Secas de <br />
+                                    Pollo y Huesos Horneados</p>
                             </div>
                         </div>
                     </div>

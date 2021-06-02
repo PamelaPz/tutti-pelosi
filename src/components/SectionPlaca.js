@@ -1,4 +1,4 @@
-import dog from '../assets/images/dogs1.png';
+import dog from '../assets/images/dogs6.png';
 import circle1 from '../assets/images/circle-perfil.png';
 import circle2 from '../assets/images/circle-registrarse.png';
 import cel2 from '../assets/images/cel-qr2.png';
@@ -22,7 +22,7 @@ function SectionPlaca() {
                             <div className="content_center">
                                 <div className="content_text">
                                     <div className="img_up"><img src={dog} alt=""/></div>
-                                    <p className="title_socio"><span>PLACA QR</span> de identidad para tu <span>Peludo</span> </p>
+                                    <p className="title_socio"><span>PLACA QR</span> identidad para tu <span>Peludo</span> </p>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ function SectionPlaca() {
             </Row>
             <Row>
                 <Col lg="12" className="p-0">
-                    <div className="content_placa">
+                    <div className="content_placa" id="shape-green">
                         <div className="d-flex justify-content-end p-0">
                             <div className="shape-text">
                                 <div className="shape-rounded"></div>
@@ -40,7 +40,7 @@ function SectionPlaca() {
                                     <li>Fecha de vacunación</li>
                                     <li>Alergias</li>
                                     <li>Enfermedades</li>
-                                    <li> y lo <span>MÁS importante</span> donde localizarte si esta <span>Extraviado</span></li>
+                                    <li> y lo <span>MÁS IMPORTANTE: DÓNDE LOCALIZARTE SI ESTÁ EXTRAVIADO</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -74,7 +74,7 @@ function SectionPlaca() {
                             <div className="content_img">
                                 <div className="img_center" id="circle-qr">
                                     <img src={circle2} alt=""/>
-                                    <p className="p-circle">REGISTRATE (TAG)</p>
+                                    <p className="p-circle">REGÍSTRATE <span>(TAG)</span> </p>
                                 </div>
                             </div>
                         </div>

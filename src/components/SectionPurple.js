@@ -1,5 +1,5 @@
 import dog2 from '../assets/images/dogs2.png';
-import producto1 from '../assets/images/producto5.png';
+import producto1 from '../assets/images/producto6.png';
 import BtnOrange from './BtnOrange';
 import { Row, Col } from 'react-bootstrap';
 
@@ -37,8 +37,12 @@ function SectionPurple() {
                     <div className="content-subtitle">
                         <div className="d-flex justify-content-center">
                             <div className="content_text">
-                                <p className="subtitle_peludo">Productos Naturales y Saludables</p>
-                                <p className="p_peludo">irresistible carnasa de pollo, pechugas de pollo y huesos deshidratados</p>
+                                <p className="subtitle_peludo">COLÁGENO HIDROLIZADO</p>
+                                <p className="p_peludo">
+                                    Mejora la calidad de vida y la movilidad. <br/>
+                                    Retarda el envejecimiento natural y reduce dolores en las articulaciones. <br/>
+                                    Regenera cartílagos y devuelve el brillo en el pelo. <br/>
+                                </p>
                             </div>
                         </div>
                     </div>

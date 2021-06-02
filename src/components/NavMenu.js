@@ -18,8 +18,8 @@ function NavMenu() {
                     </Nav>
                     <Nav >
                         <div className="social_media d-flex">
-                            <div className="icon"><a href="#"><FontAwesomeIcon icon={faWhatsappSquare} /></a></div>
                             <div className="icon"><a href="#"><FontAwesomeIcon icon={faInstagramSquare} /></a></div>
+                            <div className="icon"><a href="#"><FontAwesomeIcon icon={faWhatsappSquare} /></a></div>
                             <div className="icon"><a href="#"><FontAwesomeIcon icon={faFacebookSquare} /></a></div>
                         </div>
                     </Nav>

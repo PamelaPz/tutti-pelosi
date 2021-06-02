@@ -13,14 +13,14 @@ import NavMenu from './NavMenu';
 function App() {
   return (
     <Container fluid className="content">
-      <NavMenu />
+      {/* <NavMenu />
       <SectionsFifty />
       <SectionGray />
       <SectionPlaca />
       <SectionGreen />
       <SectionPurple />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </Container>
   );
 }
