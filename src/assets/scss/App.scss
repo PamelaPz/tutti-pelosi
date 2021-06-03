@@ -4,6 +4,7 @@
 $color-yellowBg: #FDBE34;
 $color-greenLBg: #57C09E;
 $color-purpleBg: #875AA6;
+$color-violetBg: #C44B9C;
 $color-grayBg: #B9B8BC;
 $color-grayLBg: #E4E9E6;
 $color-grayLgBg2: #DCDCDE;
@@ -18,8 +19,8 @@ $color-yellowText2: #F6B100;
 $color-orangeText: #F15A36;
 $color-redText: #EF4627;
 $color-grayIcon: #AEAEB1;
-$color-grayDarkText: #78787A;
-$color-grayDark: #3F3C3B;
+$color-grayDarkText: #5F5F63;
+$color-grayDark: #231F20;
 $color-green: #AEC81B;
 
 $color-orangeBtn: #F15A36;
@@ -56,6 +57,9 @@ $color-greenBtn: #64BC45;
 }
 .gb-grayDark {
   background-color: $color-grayDarkBg;
+}
+.bg-grayL {
+  background-color: $color-grayLgBg2;
 }
 
 /* --- Estilos para textos --- */
@@ -232,6 +236,39 @@ $color-greenBtn: #64BC45;
   line-height: 1;
   font-family: Tungsten-SemiBold;
 }
+.title_hola {
+  font-size: 5.5rem;
+  letter-spacing: 3px;
+  font-family: Tungsten-Bold;
+  span {
+    font-size: 5rem;
+    font-family: Tungsten-Medium;
+    display: block;
+  }
+}
+.title_text {
+  font-size: 3.3rem;
+  letter-spacing: 3px;
+  font-family: Tungsten-Medium;
+}
+.p-text {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  line-height: 1;
+  font-family: Tungsten-Book;
+}
+.title_info {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  font-family: Tungsten-Book;
+}
+.p-info {
+  font-size: 4.1rem;
+  letter-spacing: 3px;
+  line-height: 1;
+  font-family: Tungsten-Bold;
+}
 
 
 /* ---- Btns ---- */
@@ -371,7 +408,7 @@ $color-greenBtn: #64BC45;
       content: '';
       position: absolute;
       bottom: 30px;
-      left: 5px;
+      left: -10px;
       width: 70%;
       height: 70%;
       background-color: #000;
@@ -385,7 +422,7 @@ $color-greenBtn: #64BC45;
       content: '';
       position: absolute;
       bottom: 30px;
-      right: -5px;
+      right: -1px;
       width: 70%;
       height: 70%;
       background-color: #000;
@@ -752,7 +789,6 @@ $color-greenBtn: #64BC45;
     transform: rotate(-90deg);
     z-index: 1;
   }
-  
   .shape:before {
     content: "";
     position: absolute;
@@ -1004,9 +1040,7 @@ $color-greenBtn: #64BC45;
 
 #indentificacion.content  {
   background-color: $color-grayLgBg2;
-  padding-top: 7rem;
   margin: 0;
-  height: 100vh;
   /*  Indentificación  */
   .second_page {
     width: 50%;
@@ -1050,8 +1084,118 @@ $color-greenBtn: #64BC45;
     }
   }
 
-  .content_hola {
-    
+/* Seccion Hola */
+  .container_hola {
+    margin-top: 8.5rem;
+    height: inherit;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: $color-yellowText2;
+    .card_foto {
+      width: 30%;
+      height: 22.5rem;
+      margin: 1rem auto 2rem;
+      border-radius: 2rem;
+      background-color: $color-violetBg;
+      position: relative;
+      .placeholder_foto {
+        padding: 2rem 0;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: $color-white;
+        font-weight: lighter;
+      }
+      .fixed_wapp {
+        position: absolute;
+        top: 4rem;
+        right: -12rem;
+        background-color: #00AA51;
+        padding: .4rem;
+        border-radius: .8rem;
+        img {
+          width: 2.8rem;
+        }
+      }
+    }
+    .p-text {
+      width: 80%;
+      margin: auto;
+      color: $color-grayDark;
+    }
+
+  }
+
+  /* Seccion Info Mascota */
+  .container_info {
+    height: inherit;
+    overflow: hidden;
+    .circle_foto {
+      background-color: $color-violetBg;
+      border-radius: 100%;
+      margin: 5rem auto 4rem;
+      position: relative;
+      width: 18rem;
+      height: 18rem;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .placeholder_foto {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        color: $color-white;
+        font-size: 1.9rem;
+        text-transform: uppercase;
+      }
+    }
+    #foto3 {
+      margin-top: 8rem;
+    }
+    .content_infoPerrito {
+      position: relative;
+      z-index: 4;
+      .title_info, .p-info {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 1rem;
+        color: $color-grayDarkText;
+      }
+      .p-info {
+        margin-bottom: 8rem;
+      }
+      #description {
+        position: absolute;
+        right: -7rem;
+        top: 7rem;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        p {
+          text-align: center;
+          color: #A7282C;
+          font-size: 1.3rem;
+          line-height: 1.2;
+          letter-spacing: .5px;
+          font-family: Tungsten-Book;
+        }
+        img {
+          height: 20rem;
+        }
+      }
+    }
+  }
+  .shape {
+    position: absolute;
+    top: 5rem;
+    border-bottom: 99vw solid $color-yellowText;
+    border-left: 18rem solid transparent;
+    border-right: 18rem solid transparent;
+    height: 10vh;
+    width: 100%;
+    transform: rotate(-90deg);
+    z-index: 1;
   }
   
 }

@@ -1,18 +1,15 @@
 import '../assets/scss/App.scss';
 import { Container } from 'react-bootstrap';
-// import SectionsFifty from './Home/SectionsFifty';
-// import SectionGray from './Home/SectionGray';
-// import SectionPlaca from './Home/SectionPlaca';
-// import SectionGreen from './Home/SectionGreen';
-// import SectionPurple from './Home/SectionPurple';
-// import Contact from './Home/Contact';
-// import Footer from './Home/Footer';
+import SectionHola from './Indentificacion/SectionHola';
 import NavMenu from './Indentificacion/NavMenu';
+import SectionInfo from './Indentificacion/SectionInfo';
 
 function Indentificacion() {
   return (
     <Container fluid className="content" id="indentificacion">
       <NavMenu />
+      <SectionHola />
+      <SectionInfo />
     </Container>
   );
 }
