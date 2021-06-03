@@ -56,7 +56,7 @@ function SectionPlaca() {
             </Row>
             <Row className="gb-gray p-0">
                 <Col  style={{zIndex: 5}} >
-                    <BtnOrange link="#" classList="btnGreen_sm" classText="text_btnO" text="conocer más"/>
+                    <BtnOrange link="/indentificacion" classList="btnGreen_sm" classText="text_btnO" text="conocer más"/>
                 </Col>
             </Row>
             <Row>

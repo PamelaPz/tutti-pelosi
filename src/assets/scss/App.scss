@@ -6,8 +6,8 @@ $color-greenLBg: #57C09E;
 $color-purpleBg: #875AA6;
 $color-grayBg: #B9B8BC;
 $color-grayLBg: #E4E9E6;
+$color-grayLgBg2: #DCDCDE;
 $color-grayHeaderBg: #F3F2F2;
-$color-grayMediumBg: #828083;
 $color-grayDarkBg: #5C5B5D;
 $color-yellowO: rgba(246, 177, 0, .5);
 $color-grayMenu: #B9B8BC;
@@ -339,6 +339,7 @@ $color-greenBtn: #64BC45;
     .container-navmenu {
       background-color: $color-grayHeaderBg;
       padding: 0 5rem;
+      z-index: 2;
       nav {
         height: 7rem;
         display: flex;
@@ -365,6 +366,34 @@ $color-greenBtn: #64BC45;
           color: $color-grayIcon;
         }
       }
+    }
+    .curved::after {
+      content: '';
+      position: absolute;
+      bottom: 30px;
+      left: 5px;
+      width: 70%;
+      height: 70%;
+      background-color: #000;
+      transform-origin: right;
+      transform: skewY(-3deg);
+      filter: blur(10px);
+      opacity: 0.3;
+      z-index: 1;
+    }
+    .curved::before {
+      content: '';
+      position: absolute;
+      bottom: 30px;
+      right: -5px;
+      width: 70%;
+      height: 70%;
+      background-color: #000;
+      transform-origin: left;
+      transform: skewY(3deg);
+      filter: blur(10px);
+      opacity: 0.3;
+      z-index: 1;
     }
 
     /* Menu Modal */
@@ -970,5 +999,60 @@ $color-greenBtn: #64BC45;
       }
     }
   }
+
+}
+
+#indentificacion.content  {
+  background-color: $color-grayLgBg2;
+  padding-top: 7rem;
+  margin: 0;
+  height: 100vh;
+  /*  Indentificación  */
+  .second_page {
+    width: 50%;
+    left: calc(50% - 384px) !important;
+    .container-modal {
+      left: calc(50% - 384px);
+      .content_menu {
+        width: 76%;
+      }
+    }
+    .container-navmenu {
+      z-index: 2;
+    }
+    .curved::after {
+      content: '';
+      position: absolute;
+      bottom: 20px;
+      left: 5px;
+      width: 70%;
+      height: 70%;
+      background-color: #000;
+      transform-origin: right;
+      transform: skewY(-3deg);
+      filter: blur(10px);
+      opacity: 0.4;
+      z-index: 1;
+    }
+    .curved::before {
+      content: '';
+      position: absolute;
+      bottom: 20px;
+      right: -5px;
+      width: 70%;
+      height: 70%;
+      background-color: #000;
+      transform-origin: left;
+      transform: skewY(3deg);
+      filter: blur(10px);
+      opacity: 0.4;
+      z-index: 1;
+    }
+  }
+
+  .content_hola {
+    
+  }
+  
 }
 

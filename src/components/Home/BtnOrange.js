@@ -1,12 +1,13 @@
 import '../../assets/scss/App.scss'
+import { Link } from "react-router-dom";
 
 function BtnOrange({link, classList, text, classText}) {
     return(
         <>
             <div className={classList}>
-                <a href={link}>
+                <Link to={link}>
                     <p className={classText}>{text}</p>
-                </a>
+                </Link>
             </div>
         </>
     );

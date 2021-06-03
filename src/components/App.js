@@ -1,4 +1,5 @@
 import Home from './Home'
+import Indentificacion from './Indentificacion';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,7 +18,10 @@ function ModalSwitch() {
   return (
     <div>
       <Switch>
-        <Route path="/" children={<Home />} />
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/indentificacion" children={<Indentificacion />} />
       </Switch>
     </div>
   );
