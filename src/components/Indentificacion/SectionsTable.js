@@ -1,5 +1,5 @@
 import { Row, Col, Container } from 'react-bootstrap';
-import Mapa from '../Indentificacion/Mapa';
+// import Mapa from '../Indentificacion/Mapa';
 import icon from '../../assets/images/icon_vacuna.png';
 import casa from '../../assets/images/icon_casa.png';
 import dog from '../../assets/images/icon_dog.png';
