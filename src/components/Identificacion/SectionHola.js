@@ -3,9 +3,9 @@ import Ws from '../../assets/images/whatsapp.png'
 
 function SectionHola() {
     return(
-        <Container>
+        <Container id="contact">
             <Row>
-                <Col className="container_hola p-0" id="SectionHola">
+                <Col className="container_hola p-0">
                     <h2 className="title_hola">Hola...! soy <span>Nombre XXXXXX</span></h2>
                     <div className="card_foto">
                         <p className="placeholder_foto">

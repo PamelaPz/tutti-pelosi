@@ -8,7 +8,7 @@ import mapa from '../../assets/images/mapa.png';
 
 function SectionTables() {
     return(
-       <Container>
+       <Container id="vacunas">
             <Row>
                 <Col className="container_tables p-0">
                     <Row>
@@ -47,7 +47,7 @@ function SectionTables() {
                             </div>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row id="cuidados">
                         <Col lg="12" className="p-0">
                             <div className="content_box">
                                 <div className="header">
@@ -64,7 +64,7 @@ function SectionTables() {
                             </div>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row id="caracter">
                         <Col lg="12" className="p-0">
                             <div className="content_box">
                                 <div className="header">
@@ -81,7 +81,7 @@ function SectionTables() {
                             </div>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row id="segundo">
                         <Col lg="12" className="p-0">
                             <div className="content_box">
                                 <div className="header">
