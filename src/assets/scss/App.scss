@@ -1272,6 +1272,7 @@ $color-greenBtn: #64BC45;
     .content_box {
       width: 56%;
       margin: 4rem auto 1rem;
+      overflow: hidden;
       .header {
         display: flex;
         background-color: $color-purpleBg2;
@@ -1304,7 +1305,7 @@ $color-greenBtn: #64BC45;
         padding: .5rem .5rem; 
         text-align: justify;
       }
-      .p-tableI, .p-tableD {
+      .p-tableI, .p-tableD, a {
         color: $color-grayDarkText;
       }
       .p-tableD {
@@ -1313,6 +1314,14 @@ $color-greenBtn: #64BC45;
         a {
           padding: 0 1rem;
         }
+      }
+      .content_map {
+        height: 50rem;
+      }
+      .wp_mapa {
+        width:56% !important;
+        height: 40rem !important;
+        margin:auto !important;
       }
     }
   }
