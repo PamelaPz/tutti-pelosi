@@ -1,12 +1,11 @@
 import { Row, Col, Container } from 'react-bootstrap';
 import corchete from '../../assets/images/corchete.png'
-import { Link } from "react-router-dom";
 
 function SectionInfo() {
     return(
         <Row>
             <Col className="container_info p-0" id="SectionInfo">
-                <div className="shape"></div>
+                <div className="shapeI"></div>
                 <Row>
                     <Col lg="12" className="p-0">
                         <div className="circle_foto" id="foto2">

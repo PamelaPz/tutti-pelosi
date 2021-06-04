@@ -4,6 +4,7 @@
 $color-yellowBg: #FDBE34;
 $color-greenLBg: #57C09E;
 $color-purpleBg: #875AA6;
+$color-purpleBg2: #A05FA6;
 $color-violetBg: #C44B9C;
 $color-grayBg: #B9B8BC;
 $color-grayLBg: #E4E9E6;
@@ -267,6 +268,27 @@ $color-greenBtn: #64BC45;
   font-size: 4.1rem;
   letter-spacing: 3px;
   line-height: 1;
+  font-family: Tungsten-Bold;
+}
+.title_tabla {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  line-height: 1;
+  font-family: Tungsten-SemiBold;
+  text-transform: uppercase;
+}
+.p-tableI {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: Tungsten-Book;
+}
+.p-tableD {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  line-height: 1.1;
   font-family: Tungsten-Bold;
 }
 
@@ -1041,6 +1063,7 @@ $color-greenBtn: #64BC45;
 #indentificacion.content  {
   background-color: $color-grayLgBg2;
   margin: 0;
+  background-image: url('../images/bg_patitas.png');
   /*  Indentificación  */
   .second_page {
     width: 50%;
@@ -1132,7 +1155,7 @@ $color-greenBtn: #64BC45;
     .circle_foto {
       background-color: $color-violetBg;
       border-radius: 100%;
-      margin: 5rem auto 4rem;
+      margin: 6rem auto 6rem;
       position: relative;
       width: 18rem;
       height: 18rem;
@@ -1150,7 +1173,7 @@ $color-greenBtn: #64BC45;
       }
     }
     #foto3 {
-      margin-top: 8rem;
+      margin-top: 10rem;
     }
     .content_infoPerrito {
       position: relative;
@@ -1159,7 +1182,7 @@ $color-greenBtn: #64BC45;
         width: 50%;
         text-align: center;
         margin: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         color: $color-grayDarkText;
       }
       .p-info {
@@ -1185,17 +1208,113 @@ $color-greenBtn: #64BC45;
         }
       }
     }
+    .shapeI {
+      position: absolute;
+      top: 5rem;
+      border-bottom: 99vw solid $color-yellowText;
+      border-left: 18rem solid transparent;
+      border-right: 18rem solid transparent;
+      height: 100vh;
+      width: 100%;
+      transform: rotate(-90deg);
+      z-index: 1;
+    }
   }
-  .shape {
-    position: absolute;
-    top: 5rem;
-    border-bottom: 99vw solid $color-yellowText;
-    border-left: 18rem solid transparent;
-    border-right: 18rem solid transparent;
-    height: 10vh;
-    width: 100%;
-    transform: rotate(-90deg);
-    z-index: 1;
+  .container_tables {
+    height:inherit;
+    margin-bottom: 8rem;
+    .table_vacunas {
+      margin-top: 3rem;
+      margin-bottom: 4rem;
+      .content_table {
+        margin: auto;
+        width: 40rem;
+        background-color: $color-white;
+        text-align: center;
+        td {
+          padding: .5rem 2rem;
+          border: 3px solid $color-purpleBg2;
+          font-size: 2rem;
+          letter-spacing: 1px;
+          font-family: Tungsten-SemiBold;
+          &:nth-last-child(1){
+            text-align: left;
+          }
+        }
+        th {
+          border: 3px solid $color-purpleBg2;
+          background-color: $color-purpleBg2;
+          color: $color-white;
+          font-size: 2.5rem;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          font-family: Tungsten-Book;
+          position: relative;
+          span {
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            img {
+              width: 75%;
+            }
+          }
+          &:first-child {
+            width: 75%;
+          }
+        }
+        #date {
+          text-align: left;
+          padding-left: 2rem;
+          color: $color-grayDark;
+        }
+      }
+    }
+    .content_box {
+      width: 56%;
+      margin: 4rem auto 1rem;
+      .header {
+        display: flex;
+        background-color: $color-purpleBg2;
+        color: $color-white;
+        padding: .8rem 2rem;
+        span {
+          position:relative;
+          padding-right: 8rem;
+          img#casa {
+            position: absolute;
+            top: -4px;
+            left: -.7rem;
+            width: 4rem;
+          }
+          img#dog {
+            position: absolute;
+            top: -6px;
+            left: -.7rem;
+            width: 3.4rem;
+          }
+          img#corazon {
+            position: absolute;
+            top: -5px;
+            left: -.7rem;
+            width: 3.2rem;
+          }
+        }
+      }
+      .p-tableI {
+        padding: .5rem .5rem; 
+        text-align: justify;
+      }
+      .p-tableI, .p-tableD {
+        color: $color-grayDarkText;
+      }
+      .p-tableD {
+        text-align:center;
+        padding: 1rem 0;
+        a {
+          padding: 0 1rem;
+        }
+      }
+    }
   }
   
 }
