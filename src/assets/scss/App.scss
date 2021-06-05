@@ -128,6 +128,12 @@ $color-greenBtn: #64BC45;
     font-size: 6.8rem;
     font-family: Tungsten-SemiBold;
   }
+  @media (max-width:767px) {
+    font-size: 3.2rem;
+    span {
+      font-size: 5rem;
+    }
+  }
 }
 .p-product {
   margin: 0 auto;
@@ -139,6 +145,9 @@ $color-greenBtn: #64BC45;
   span {
     color: $color-orangeText;
     font-family: Tungsten-Bold;
+  }
+  @media (max-width:767px) {
+    font-size: 1.3rem;
   }
 }
 .p-dark {
@@ -323,6 +332,11 @@ $color-greenBtn: #64BC45;
     letter-spacing: 2px;
     font-family: Tungsten-Light;
   }
+  @media (max-width:767px) {
+    .text_btnO{
+      font-size: 1.7rem;
+    }
+  }
 }
 .btnOrange_lg {
   margin-top: 2rem;
@@ -342,6 +356,11 @@ $color-greenBtn: #64BC45;
     letter-spacing: 3px;
     font-family: Tungsten-SemiBold;
   }
+  @media (max-width:767px) {
+    .text_btnO{
+      font-size: 2rem;
+    }
+  }
 }
 .btnGreen_xl {
   width: fit-content;
@@ -360,6 +379,11 @@ $color-greenBtn: #64BC45;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-family: Tungsten-SemiBold;
+  }
+  @media (max-width:767px) {
+    padding: 0;
+    font-size: 1.8rem;
+    width: 80%;
   }
 }
 .btnGreen_sm {
@@ -751,6 +775,18 @@ $color-greenBtn: #64BC45;
         width: 63%;
       }
     }
+    @media (max-width:767px) {
+      height: 100vh;
+      .content_info {
+        grid-template-columns: 1fr;
+        .content_text {
+          width: 100%;
+        }
+      }
+      .img_left {
+        display: none;
+      }
+    }
   }
 
   /* ---- Sección gris de productos ---- */
@@ -803,15 +839,30 @@ $color-greenBtn: #64BC45;
         }
       }
     }
+    @media (max-width:767px) {
+      width: 100%;
+      height: 28rem;
+      .content_text {
+        width: 80%;
+        height: auto;
+      }
+    }
   }
   .reset_width .content_producto {
     width: 61% !important;
     .content_text {
       width: 100% !important;
     }
+    @media (max-width:767px) {
+      width: 98%!important;
+      margin: auto;
+    }
   }
   .contentBtn {
     padding: 12rem 0 1rem;
+    @media (max-width:767px) {
+      padding: 6rem 0 1rem;
+    }
   }
 
   /* Seccion placa */

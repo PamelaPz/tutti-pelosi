@@ -10,7 +10,7 @@ function SectionGray() {
   return(
     <>
       <Row>
-        <Col md={6} className="gb-gray d-flex justify-content-end">
+        <Col md={6} sm={12} className="gb-gray d-flex justify-content-end">
             <div className="content_producto">
                 <div className="img_center"><img src={medalla1} alt=""/></div>
                 <div className="content_text">
@@ -19,7 +19,7 @@ function SectionGray() {
                 </div>
             </div>
         </Col>
-        <Col md={6} className="gb-gray d-flex justify-content-start">
+        <Col md={6} sm={12} className="gb-gray d-flex justify-content-start">
             <div className="content_producto">
                 <div className="img_center"><img src={medalla1} alt=""/></div>
                 <div className="content_text">
@@ -30,7 +30,7 @@ function SectionGray() {
         </Col>
       </Row>
       <Row>
-        <Col md={6} className="gb-gray d-flex justify-content-end reset_width">
+        <Col md={6} sm={12} className="gb-gray d-flex justify-content-end reset_width">
             <div className="content_producto">
                 <div className="img_center"><img src={producto3} alt="" id="bones"/></div>
                 <div className="content_text">
