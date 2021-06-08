@@ -20,7 +20,10 @@ function SectionsFifty() {
                 <div className="img_left"><img src={cel1} alt=""/></div>
                 <div className="content_text">
                   <h2 className="super-title">IDENTIFICACIÓN QR PARA SU PELUDO</h2>
-                  <img className="img_center" src={medalla1} alt=""/>
+                  <div id="mobile_visiblecel">
+                    <img className="img_cel_mobile" src={cel1} alt=""/>
+                    <img className="img_center" src={medalla1} alt=""/>
+                  </div>
                   <p className="p-principal">
                     Con toda la información necesaria para<br />
                    <span>AYUDARLO A REGRESAR A CASA!</span> <br />
@@ -42,9 +45,10 @@ function SectionsFifty() {
                     <h2 className="super-title">PREMIOS NATURALES</h2>
                     <p className="p-principal">Para recompensar sus grandes logros</p>
                   </div>
-                  <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
+                  <BtnOrange link="#" classList="btnOrange_sm show_lg" classText="text_btnO" text="conocer más"/>
                 </div>
                 <div className="img_right"><img src={dog4} alt=""/></div>
+                <BtnOrange link="#" classList="btnOrange_sm hidden_lg" classText="text_btnO" text="conocer más"/>
               </div>
           </section>
         </Col>
@@ -63,9 +67,10 @@ function SectionsFifty() {
                       la movilidad y fortaleza  
                     </p>
                   </div>
-                  <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
+                  <BtnOrange link="#" classList="btnOrange_sm show_lg" classText="text_btnO" text="conocer más"/>
                 </div>
                 <div className="img_right"><img src={producto5} alt=""/></div>
+                <BtnOrange link="#" classList="btnOrange_sm hidden_lg" classText="text_btnO" text="conocer más"/>
               </div>
           </section>
         </Col>
@@ -76,7 +81,7 @@ function SectionsFifty() {
             <div className="content_info">
               <div className="img_left"><img src={circle3} alt=""/></div>
               <div className="content_text">
-                <h2 className="text-yellow title_socio">Conviertete en <span>Socio Comercial</span></h2>
+                <h2 className="text-yellow title_socio">Conviértete en <span>Socio Comercial</span></h2>
                 <BtnOrange link="#" classList="btnOrange_lg" classText="text_btnO" text="Beneficios"/>
               </div>
             </div>

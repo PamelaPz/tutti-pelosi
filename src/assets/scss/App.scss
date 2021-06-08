@@ -479,8 +479,10 @@ $color-greenBtn: #64BC45;
     margin-top: 0rem;
     .section {
       margin: 0;
+      padding: 0;
+      overflow-x: hidden;
       .vh-50 {
-        height: 100vh;
+        height: auto;
       }
     }
   }
@@ -603,18 +605,10 @@ $color-greenBtn: #64BC45;
         }
       }
       .curved::after {
-        bottom: 20px;
-        left: -16px;
-        width: 50%;
-        height: 50%;
-        transform: skewY(-8deg);
+        display: none;
       }
       .curved::before {
-        bottom: 20px;
-        right: -1px;
-        width: 50%;
-        height: 50%;
-        transform: skewY(8deg);
+        display: none;
       }
 
       /* Menu Modal */
@@ -636,8 +630,8 @@ $color-greenBtn: #64BC45;
     height: inherit;
     @media (max-width:767px) {
       padding-top: 0;
+      padding-bottom: 2rem;
       align-items: center;
-      grid-template-columns: 1fr;
     }
     .content_text {
       color: $color-white;
@@ -670,26 +664,65 @@ $color-greenBtn: #64BC45;
     .img_center {
       width: 50%;
     }
+    .img_cel_mobile {
+      display: none;
+    }
     .img_right {
       position: relative;
       img{
         width: 105%;
-        position: absolute;
+        position: relative;
         left: -8rem;
-        bottom: 4.5rem;   
+        bottom: 6rem;  
       }
     }
     @media (max-width:767px) {
-      background-position: left top, right bottom;
-      background-size: 35%, 28%;
+      background-image: none;
+      .content_info  {
+        .img_left {
+          grid-area: cel;
+        }
+        .content_text {
+          grid-area: centro;
+        }
+        .img_right {
+          grid-area: mascotas;
+        }
+  
+        grid-template-columns: 1fr;
+        grid-template: 
+          "mascotas" auto
+          "centro" 30rem
+          ;
+      }
       .img_left {
         display: none;
       }
-      .img_center {
-        width: 55%;
+      .content_text {
+        #mobile_visiblecel {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .img_center {
+            width: 42%;
+            position: relative;
+            left: -3rem;
+            top: -1rem;
+          }
+          .img_cel_mobile {
+            display: block;
+            width: 66%;
+            position: relative;
+            left: -2.5rem;
+            margin-top: 1rem;
+          }
+        }
       }
       .img_right {
-        display: none;
+        img{
+          left: 0;
+          bottom: 0;  
+        }
       }
     }
   }
@@ -701,6 +734,9 @@ $color-greenBtn: #64BC45;
     background-size: 14%, 14%;
     position: relative;
     .content_info {
+      .hidden_lg {
+        display: none;
+      }
       .content_text{
         width: 80% !important;
         margin: auto;
@@ -730,22 +766,58 @@ $color-greenBtn: #64BC45;
       }
     }
     @media (max-width:767px) {
-      background-position: left top, right bottom;
-      background-size: 40%, 35%;
+      background-image: none;
       .content_info {
+        .hidden_lg {
+          display: block;
+        }
+        .show_lg {
+          display: none;
+        }
+        .img_left {
+          grid-area: huesos;
+        }
+        .content_text {
+          grid-area: centro;
+        }
+        .img_right {
+          grid-area: perro;
+        }
+  
+        grid-template-columns: 1fr;
+        grid-template: 
+          "centro" 16rem
+          "huesos" auto
+          "perro" auto
+          ;
         .content_text{
           width: 100% !important;
           justify-content: space-evenly !important;
+          .super-title {
+            width: 80%;
+            margin: auto;
+          }
           .p-principal {
             width: 50%;
           }
         }
       }
       .img_left {
-        display: none;
+        img {
+          width: 80%;
+          position: relative;
+          right: -2rem;
+          bottom: 0;
+        }
       }
       .img_right {
-        display: none;
+        img{
+          width: 55%;
+          margin-top: 2rem;
+          position: relative;
+          left: calc(50% - 103px);
+          bottom: -0.5rem;
+        }
       }
     }
   }
@@ -757,6 +829,9 @@ $color-greenBtn: #64BC45;
     background-size: 12%, 20%;
     position: relative;
     .content_info {
+      .hidden_lg {
+        display: none;
+      }
       .content_text {
         width: 100% !important;
         margin: auto;
@@ -787,22 +862,52 @@ $color-greenBtn: #64BC45;
       }
     }
     @media (max-width:767px) {
-      background-position: left -1.5cm top 1.5cm, right -1cm top .5cm;
-      background-position: left top, right bottom;
-      background-size: 38%, 45%;
+      background-image: none;
       .content_info {
+        .hidden_lg {
+          display: block;
+        }
+        .show_lg {
+          display: none;
+        }
+        .img_left {
+          grid-area: mascota;
+        }
+        .content_text {
+          grid-area: centro;
+        }
+        .img_right {
+          grid-area: bolsa;
+        }
+  
+        grid-template-columns: 1fr;
+        grid-template: 
+          "centro"
+          "bolsa" 
+          "mascota" 
+          ;
         .content_text{
-          justify-content: space-evenly !important;
-          .p-principal {
-            width: 100%;
-          }
+          justify-content: flex-end !important;
+          padding-top: 3rem;
         }
       }
       .img_left {
-        display: none;
+        img {
+          width: 75%;
+          margin-top: 1rem;
+          position: relative;
+          right: -3.4rem;
+          bottom: 0;
+        }
       }
       .img_right {
-        display: none;
+        img{
+          width: 65%;
+          margin-top: 2rem;
+          position: relative;
+          left: calc(50% - 121px);
+          bottom: -0.5rem;
+        }
       }
     }
   }
@@ -827,15 +932,40 @@ $color-greenBtn: #64BC45;
       }
     }
     @media (max-width:767px) {
-      height: 100vh;
+      height: auto;
       .content_info {
-        grid-template-columns: 1fr;
+        .hidden_lg {
+          display: block;
+        }
+        .show_lg {
+          display: none;
+        }
+        .img_left {
+          grid-area: socio;
+        }
         .content_text {
-          width: 100%;
+          grid-area: centro;
+        }
+  
+        grid-template-columns: 1fr;
+        grid-template: 
+          "socio" 
+          "centro"
+          ;
+        .content_text {
+          width: 80%;
+          margin: auto;
         }
       }
       .img_left {
-        display: none;
+        margin: 4rem auto auto;
+        padding: 0;
+        justify-content:center;
+        img {
+          width: 60%;
+          position: relative;
+          bottom: 0;
+        }
       }
     }
   }
