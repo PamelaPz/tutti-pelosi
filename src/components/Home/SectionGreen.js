@@ -31,7 +31,7 @@ function SectionGreen() {
                             <div className="img_grid"><img src={producto2} alt=""/></div>
                         </div>
                         <div className="p-0">
-                            <div className="img_grid"><img src={producto3} id="img_right" alt=""/></div>
+                            <div className="img_grid" id="img-end"><img src={producto3} id="img_right" alt=""/></div>
                         </div>
                     </div>
                 </Col>
