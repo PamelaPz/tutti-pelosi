@@ -10,7 +10,7 @@ function SectionGray() {
   return(
     <>
       <Row>
-        <Col md={6} sm={12} className="gb-gray d-flex justify-content-end">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-end">
             <div className="content_producto">
                 <div className="img_center"><img src={medalla1} alt=""/></div>
                 <div className="content_text">
@@ -19,7 +19,7 @@ function SectionGray() {
                 </div>
             </div>
         </Col>
-        <Col md={6} sm={12} className="gb-gray d-flex justify-content-start">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-start">
             <div className="content_producto">
                 <div className="img_center"><img src={medalla1} alt=""/></div>
                 <div className="content_text">
@@ -30,40 +30,40 @@ function SectionGray() {
         </Col>
       </Row>
       <Row>
-        <Col md={6} sm={12} className="gb-gray d-flex justify-content-end reset_width">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-end reset_width">
             <div className="content_producto">
                 <div className="img_center"><img src={producto3} alt="" id="bones"/></div>
-                <div className="content_text">
+                <div className="content_text reset_p">
                     <p className="p-product span_block"><span>Huesos Naturales</span> para los peludos de mayor tamaño! <br/> Premia sus grandes logros mientras lo fortaleces <br/> con calcio, hierro, vitaminas y minerales</p>
                     <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
                 </div>
             </div>
         </Col>
-        <Col md={6} className="gb-gray d-flex justify-content-start">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-start">
             <div className="content_producto">
                 <div className="img_center"><img src={producto4} alt="" id="carnaza"/></div>
-                <div className="content_text">
-                    <p className="p-product span_block">Irresistible <span>Palitos de Carnaza con Pollo</span> para limpiar los dientes y premiar el esfuerzo y éxito de tu mascota</p>
+                <div className="content_text reset_p">
+                    <p className="p-product span_block"> <span id="lg_hidden">Palitos de Carnaza con Pollo.</span> Irresistible <span id="sm_hidden">Palitos de Carnaza con Pollo</span> para limpiar los dientes y premiar el esfuerzo y éxito de tu mascota</p>
                     <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
                 </div>
             </div>
         </Col>
       </Row>
       <Row>
-        <Col md={6} className="gb-gray d-flex justify-content-end pt-5">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-end pt-lg-5">
             <div className="content_producto">
                 <div className="img_center"><img src={producto1} alt="" id="pollo"/></div>
-                <div className="content_text">
+                <div className="content_text reset_p">
                     <p className="p-product span_block">Deliciosa <span>Carne de Pollo Seca</span> para consentir a perros y gatos con <br /> una botana que es 100% proteína natural</p>
                     <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
                 </div>
             </div>
         </Col>
-        <Col md={6} className="gb-gray d-flex justify-content-start pt-5">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-start pt-lg-5">
             <div className="content_producto">
                 <div className="img_center"><img src={producto6} alt="" id="colageno"/></div>
-                <div className="content_text">
-                    <p className="p-product span_block py-3"><span>Colágeno Hidrolizado</span> para recuperar la movilidad y energía reduciendo dolores en las articulaciones</p>
+                <div className="content_text reset_p">
+                    <p className="p-product span_block py-lg-3 py-2"><span>Colágeno Hidrolizado</span> para recuperar la movilidad y energía reduciendo dolores en las articulaciones</p>
                     <BtnOrange link="#" classList="btnOrange_sm" classText="text_btnO" text="conocer más"/>
                 </div>
             </div>

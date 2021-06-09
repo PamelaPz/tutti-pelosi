@@ -129,9 +129,11 @@ $color-greenBtn: #64BC45;
     font-family: Tungsten-SemiBold;
   }
   @media (max-width:767px) {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
+    font-family: Tungsten-Bold;
     span {
-      font-size: 4rem;
+      font-size: 3rem;
+      font-family: Tungsten-Bold;
     }
   }
 }
@@ -147,7 +149,7 @@ $color-greenBtn: #64BC45;
     font-family: Tungsten-Bold;
   }
   @media (max-width:767px) {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 .p-dark {
@@ -400,8 +402,10 @@ $color-greenBtn: #64BC45;
     font-family: Tungsten-SemiBold;
   }
   @media (max-width:767px) {
+    border-radius: 1rem;
+    padding: .1rem 0;
     .text_btnO{
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -426,9 +430,9 @@ $color-greenBtn: #64BC45;
   @media (max-width:767px) {
     padding: 0;
     .text_btnO {
-      font-size: 1.9rem;
+      font-size: 1.3rem;
     }
-    width: 80%;
+    width: 55%;
   }
 }
 .btnGreen_sm {
@@ -796,9 +800,11 @@ $color-greenBtn: #64BC45;
           .super-title {
             width: 80%;
             margin: auto;
+            font-size: 3.5rem;
           }
           .p-principal {
-            width: 50%;
+            width: 60%;
+            font-size: 1.9rem;
           }
         }
       }
@@ -889,6 +895,15 @@ $color-greenBtn: #64BC45;
         .content_text{
           justify-content: flex-end !important;
           padding-top: 3rem;
+          .font-SemiBold {
+            font-family: Tungsten-Bold !important;
+          }
+          .super-title {
+            font-size: 3.5rem;
+          }
+          .p-principal {
+            font-size: 2rem;
+          }
         }
       }
       .img_left {
@@ -953,8 +968,12 @@ $color-greenBtn: #64BC45;
           "centro"
           ;
         .content_text {
-          width: 80%;
+          width: 88%;
           margin: auto;
+          .title_socio {
+            width: 85%;
+            margin-top: 1rem;
+          }
         }
       }
       .img_left {
@@ -1013,6 +1032,12 @@ $color-greenBtn: #64BC45;
       .p-product {
         padding-bottom: .2rem;
         line-height: 1.1 !important;
+        span#lg_hidden {
+          display: none !important;
+        }
+        span#sm_hidden {
+          display: block !important;
+        }
       }
       .span_block { 
         span {
@@ -1020,12 +1045,55 @@ $color-greenBtn: #64BC45;
         }
       }
     }
-    @media (max-width:767px) {
+  }
+  @media (max-width:767px) {
+    .content_producto {
       width: 100%;
-      height: 28rem;
+      height: 22rem;
+      .img_center {
+        img {
+          width: 70%;
+        }
+        img#bones {
+          width: 94%;
+          margin-bottom: 1rem;
+        }
+        img#carnaza {
+          width: 46%;
+        }
+        img#pollo {
+          width: 100%;
+        }
+        img#colageno {
+          width: 81%;
+        }
+      }
+      .btnOrange_sm {
+        .text_btnO {
+          font-size:1.2rem
+        }
+        padding: .1rem 1rem .3rem;
+        border-radius: .5rem;
+      }
       .content_text {
         width: 80%;
         height: auto;
+      }
+      .content_text.reset_p {
+        width: 84%;
+        p.p-product.span_block {
+          font-size: 1rem !important;
+          letter-spacing: 0px !important;
+          span#lg_hidden {
+            display: inline !important;
+          }
+          span#sm_hidden {
+            display: none !important;
+          }
+          br {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -1037,12 +1105,15 @@ $color-greenBtn: #64BC45;
     @media (max-width:767px) {
       width: 98%!important;
       margin: auto;
+      .content_text {
+        width: 96% !important;
+      }
     }
   }
   .contentBtn {
     padding: 12rem 0 1rem;
     @media (max-width:767px) {
-      padding: 6rem 0 1rem;
+      padding: 2rem 0 1rem;
     }
   }
 
