@@ -1573,19 +1573,30 @@ $color-greenBtn: #64BC45;
         }
       }
     }
+    .img_showMobile {
+      display: none;
+    }
     @media (max-width:767px) {
+      padding: 0 0 2rem 0;
       .content-title {
         .content_text {
           padding: 8rem 0 3rem;
           .title_peludo {
-            width: 55%;
+            width: 62%;
           }
         }
       }
       .content-subtitle {
         .content_text {
-          padding-left: 3.8rem;
-          padding-right: 3.8rem;
+          .subtitle_peludo  {
+            font-family: Tungsten-SemiBold;
+            font-size: 2.6rem;
+            margin-bottom: 1rem;
+          }
+          .p_peludo {
+            padding-left: 3.8rem;
+            padding-right: 3.8rem;
+          }
         }
       }
       .content-img {
@@ -1595,20 +1606,33 @@ $color-greenBtn: #64BC45;
         .img_grid {
           position: inherit;
           width: 100%;
-          height: 18rem;
+          height: 20rem;
           #img_dogs {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            right: 0;
+            display: none;
           }
           img#img_dogs{
             width: 100%;
             padding: 0 2rem;
           }
           #img_bag {
-            display: none;
+            top: 0;
+            left: calc(50% - 9rem);
+            width: 18rem;
+          }
+        }
+      }
+      .img_showMobile {
+        display: block;
+        .content-img {
+          .img_grid {
+            position: inherit;
+            width: 100%;
+            height: 14rem;
+            #img_dogs {
+              display: block;
+              left: calc(50% - 12.5rem);
+              padding: 0 2rem;
+            }
           }
         }
       }

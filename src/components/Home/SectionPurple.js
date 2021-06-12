@@ -48,6 +48,15 @@ function SectionPurple() {
                     </div>
                 </Col>
             </Row>
+            <Row className="img_showMobile">
+                <Col lg="12" className=" p-0">
+                    <div className="content-img">
+                        <div className="p-0">
+                            <div className="img_grid"><img src={dog2} id="img_dogs" alt=""/></div>
+                        </div>
+                    </div>
+                </Col>
+            </Row>
             <Row className="gb-gray p-0 ">
                 <Col>
                     <BtnOrange link="#" classList="btnGreen_xl" classText="text_btnO" text="SABER MÁS"/>
