@@ -8,7 +8,7 @@ function SectionGreen() {
   return(
     <>
       <Row>
-          <Col className="gb-gray container-peludo p-0">
+          <Col className="gb-gray bg_yellow-sm container-peludo p-0">
             <div className="shape-paralelo"></div>
             <Row>
                 <Col lg="12" className=" p-0">
@@ -28,7 +28,7 @@ function SectionGreen() {
                             <div className="img_grid"><img src={producto1} id="img_left" alt=""/></div>
                         </div>
                         <div className="p-0">
-                            <div className="img_grid"><img src={producto2} alt=""/></div>
+                            <div className="img_grid"><img src={producto2} id="img_center" alt=""/></div>
                         </div>
                         <div className="p-0">
                             <div className="img_grid" id="img-end"><img src={producto3} id="img_right" alt=""/></div>

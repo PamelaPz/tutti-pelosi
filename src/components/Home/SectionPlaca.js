@@ -10,10 +10,10 @@ function SectionPlaca() {
   return(
     <>
       <Row>
-          <Col className="p-0 container-placa">
+          <Col className="p-0 container-placa gb-gray">
           <div className="shape"></div>
             <Row>
-                <Col lg="12" className="gb-gray p-0">
+                <Col lg="12" className="p-0">
                     <div className="content_placa">
                         <div className="d-flex justify-content-end p-0">
                             <div className="img_left"><img src={cel2} alt=""/></div>
@@ -54,13 +54,13 @@ function SectionPlaca() {
                     </div>
                 </Col>
             </Row>
-            <Row className="gb-gray p-0">
+            <Row className="p-0">
                 <Col  style={{zIndex: 5}} >
                     <BtnOrange link="/indentificacion" classList="btnGreen_sm" classText="text_btnO" text="conocer más"/>
                 </Col>
             </Row>
             <Row>
-                <Col className="gb-gray p-0">
+                <Col className="p-0">
                     <div className="content_circleDog">
                         <div className="d-flex justify-content-end p-0">
                             <div className="content_img">
