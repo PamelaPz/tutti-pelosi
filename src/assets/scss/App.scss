@@ -361,6 +361,18 @@ $color-greenBtn: #64BC45;
   font-family: Tungsten-Bold;
 }
 
+.titleMascotas {
+  font-size: 5rem;
+  letter-spacing: 3px;
+  line-height: 1;
+  font-family: Tungsten-SemiBold;
+}
+.titleCard {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: Tungsten-SemiBold;
+}
 
 /* ---- Btns ---- */
 .btnOrange_sm {
@@ -1334,9 +1346,6 @@ $color-greenBtn: #64BC45;
             border-bottom-left-radius: 50% 50%;
             padding: 0;
           }
-          #circle-dog {
-            // padding-right: 0;
-          }
           #circle-qr {
             padding-left: 1rem;
           }
@@ -2100,3 +2109,109 @@ $color-greenBtn: #64BC45;
   
 }
 
+#misMascotas.content {
+  height: 100vh;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  .wp_card {
+    width: 40%;
+    margin: auto auto;
+    border-radius: 1.5rem;
+    border: 2px solid $color-grayDarkText;
+    padding: 1.5rem;
+    .wp_form {
+      background-color: #DCDCDE;
+      padding: 1.5rem 1.5rem 2.5rem;
+      img {
+        width: 42%;
+      }
+      .titleCard {
+        color: $color-grayDarkText;
+      }
+      .wp_showData {
+        margin: 1.5rem 0 2rem;
+
+        .inputInfo {
+          width: 100%;
+          background-color: transparent;
+          margin: 1rem 0 .8rem 0;
+        }
+      }
+      .btnPass {
+        background-color: $color-orangeBtn;
+        font-size: 1rem;
+        border: none;
+        padding: .2rem .8rem;
+      }
+      .btnNew {
+        background-color: $color-orangeBtn;
+      }
+      .btnNext {
+        background-color: $color-greenBtn;
+        margin-right: 0;
+      }
+      .btnNewTag {
+        padding: .1rem 5rem;
+      }
+    }
+  }
+
+  
+  .inputInfo {
+    border: 2px solid $color-yellowText2;
+    margin-right: 1.5rem;
+    background-color: $color-white;
+    padding: .1rem 1.5rem;
+    font-family: Tungsten-Medium;
+    font-size: 1.2rem;
+  }
+  .btn {
+    color: $color-white;
+    padding: 0 1.5rem;
+    margin-right: 1.6rem;
+    border-radius: 10px;
+    font-family: Tungsten-Book;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: 2px solid $color-white;
+  }
+
+  .wp_bodyInfo {
+    width: 50%;
+    margin: auto;
+
+    .titleMascotas {
+      text-align: center;
+      color: $color-grayDarkText;
+      margin-bottom: 2rem;
+    }
+    .wp_showData {
+      margin: 1rem 0;
+      .inputInfo {
+        width: 15rem;
+      }
+      .name {
+        width: 11rem;
+      }
+    }
+    
+    .btnShow {
+      background-color: $color-greenBtn;
+    }
+    .btnEdit, .btnNewTg {
+      background-color: $color-orangeBtn;
+    }
+    .wp_buttonNew {
+      width: 90%;
+      padding-top: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      .btnNewTg {
+        padding: 0 3.5rem;
+      }
+    }
+  }
+}
