@@ -315,29 +315,50 @@ $color-greenBtn: #64BC45;
     font-family: Tungsten-Medium;
     display: block;
   }
+  @media (max-width:767px) {
+    font-size: 4rem;
+    span {
+      font-size: 4rem;
+    }
+  }
 }
 .title_text {
   font-size: 3.3rem;
   letter-spacing: 3px;
   font-family: Tungsten-Medium;
+  @media (max-width:767px) {
+    font-size: 2.8rem;
+  }
 }
 .p-text {
   font-size: 2.5rem;
   letter-spacing: 3px;
   line-height: 1;
   font-family: Tungsten-Book;
+  @media (max-width:767px) {
+    font-size: 2rem;
+    br {
+      display: none;
+    }
+  }
 }
 .title_info {
   font-size: 2.8rem;
   line-height: 1.1;
   letter-spacing: 2px;
   font-family: Tungsten-Book;
+  @media (max-width:767px) {
+    font-size: 2rem;
+  }
 }
 .p-info {
   font-size: 4.1rem;
   letter-spacing: 3px;
   line-height: 1;
   font-family: Tungsten-Bold;
+  @media (max-width:767px) {
+    font-size: 2.5rem;
+  }
 }
 .title_tabla {
   margin: 0;
@@ -1886,9 +1907,10 @@ $color-greenBtn: #64BC45;
       opacity: 0.4;
       z-index: 1;
     }
+    
   }
 
-/* Seccion Hola */
+  /* Seccion Hola */
   .container_hola {
     margin-top: 8.5rem;
     height: inherit;
@@ -2107,6 +2129,205 @@ $color-greenBtn: #64BC45;
     }
   }
   
+}
+@media (max-width:767px) {
+  #indentificacion.content {
+    width: 100%;
+    overflow-x: hidden;
+    .second_page {
+      width: 100% !important;
+      left: 0 !important;
+      .container-modal {
+        left: -1rem;
+        .content_menu {
+          width: 100%;
+        }
+      }
+    }
+  /* Seccion Hola */
+  .container_hola {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .card_foto {
+      width: 60%;
+      height: 15rem;
+      .placeholder_foto {
+        font-size: 1rem;
+      }
+      .fixed_wapp {
+        top: 4rem;
+        right: -4rem;
+        img {
+          width: 2.2rem;
+        }
+      }
+    }
+    .p-text {
+      width: 70%;
+      margin: auto;
+      color: $color-grayDark;
+    }
+  }
+
+  /* Seccion Info Mascota */
+  .container_info {
+    .circle_foto {
+      margin: 3rem auto 6rem;
+      width: 15rem;
+      height: 15rem;
+      .placeholder_foto {
+        font-size: 1.5rem;
+      }
+    }
+    #foto3 {
+      margin-top: 4rem;
+    }
+    .content_infoPerrito {
+      position: relative;
+      z-index: 4;
+      .title_info, .p-info {
+        width: 48%;
+      }
+      .p-info {
+        width: 60%;
+        margin-top: 9rem;
+        margin-bottom: 2rem;
+      }
+      #description {
+        position: absolute;
+        right:calc(50% - 4.5rem);
+        top: 17rem;
+        p {
+          font-size: 1.1rem;
+          letter-spacing: .2px;
+        }
+        img {
+          position: absolute;
+          bottom: 1rem;
+          left: 44%;
+          height: 12rem;
+          transform: rotate(90deg);
+        }
+      }
+    }
+    .shapeI {
+      position: absolute;
+      top: -10rem;
+      border-bottom: 374vw solid $color-yellowText;
+      border-left: 18rem solid transparent;
+      border-right: 18rem solid transparent;
+      height: 100vh;
+      width: 365%;
+      transform: rotate(-90deg);
+      z-index: 1;
+    }
+  }
+  .container_tables {
+    height:inherit;
+    margin-bottom: 8rem;
+    .table_vacunas {
+      margin-top: 7rem;
+      margin-bottom: 4rem;
+      .content_table {
+        margin: auto;
+        width: 40rem;
+        background-color: $color-white;
+        text-align: center;
+        td {
+          padding: .5rem 2rem;
+          border: 3px solid $color-purpleBg2;
+          font-size: 2rem;
+          letter-spacing: 1px;
+          font-family: Tungsten-SemiBold;
+          &:nth-last-child(1){
+            text-align: left;
+          }
+        }
+        th {
+          border: 3px solid $color-purpleBg2;
+          background-color: $color-purpleBg2;
+          color: $color-white;
+          font-size: 2.5rem;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          font-family: Tungsten-Book;
+          position: relative;
+          span {
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            img {
+              width: 75%;
+            }
+          }
+          &:first-child {
+            width: 75%;
+          }
+        }
+        #date {
+          text-align: left;
+          padding-left: 2rem;
+          color: $color-grayDark;
+        }
+      }
+    }
+    .content_box {
+      width: 56%;
+      margin: 6rem auto 1rem;
+      overflow: hidden;
+      .header {
+        display: flex;
+        background-color: $color-purpleBg2;
+        color: $color-white;
+        padding: .8rem 2rem;
+        span {
+          position:relative;
+          padding-right: 8rem;
+          img#casa {
+            position: absolute;
+            top: -4px;
+            left: -.7rem;
+            width: 4rem;
+          }
+          img#dog {
+            position: absolute;
+            top: -6px;
+            left: -.7rem;
+            width: 3.4rem;
+          }
+          img#corazon {
+            position: absolute;
+            top: -5px;
+            left: -.7rem;
+            width: 3.2rem;
+          }
+        }
+      }
+      .p-tableI {
+        padding: .5rem .5rem; 
+        text-align: justify;
+      }
+      .p-tableI, .p-tableD, a {
+        color: $color-grayDarkText;
+      }
+      .p-tableD {
+        text-align:center;
+        padding: 1rem 0;
+        a {
+          padding: 0 1rem;
+        }
+      }
+      .content_map {
+        height: 50rem;
+      }
+      .wp_mapa {
+        width:56% !important;
+        height: 40rem !important;
+        margin:auto !important;
+      }
+    }
+  }
+  }
 }
 
 #misMascotas.content {
