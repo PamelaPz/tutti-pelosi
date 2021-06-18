@@ -368,19 +368,30 @@ $color-greenBtn: #64BC45;
   line-height: 1;
   font-family: Tungsten-SemiBold;
   text-transform: uppercase;
+  @media (max-width:767px) {
+    font-size: 1.8rem;
+  }
 }
 .p-tableI {
   font-size: 2.8rem;
   letter-spacing: 1px;
   line-height: 1;
   font-family: Tungsten-Book;
+  @media (max-width:767px) {
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
 }
 .p-tableD {
   font-size: 2.5rem;
   letter-spacing: 1px;
   line-height: 1.1;
   font-family: Tungsten-Bold;
+  @media (max-width:767px) {
+    font-size: 1.5rem;
+  }
 }
+
 
 .titleMascotas {
   font-size: 5rem;
@@ -2212,118 +2223,68 @@ $color-greenBtn: #64BC45;
     }
     .shapeI {
       position: absolute;
-      top: -10rem;
+      top: -8rem;
       border-bottom: 374vw solid $color-yellowText;
       border-left: 18rem solid transparent;
       border-right: 18rem solid transparent;
       height: 100vh;
-      width: 365%;
+      width: 350%;
       transform: rotate(-90deg);
       z-index: 1;
     }
   }
   .container_tables {
-    height:inherit;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     .table_vacunas {
-      margin-top: 7rem;
-      margin-bottom: 4rem;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
       .content_table {
         margin: auto;
-        width: 40rem;
-        background-color: $color-white;
-        text-align: center;
+        width: fit-content;
         td {
-          padding: .5rem 2rem;
-          border: 3px solid $color-purpleBg2;
-          font-size: 2rem;
-          letter-spacing: 1px;
-          font-family: Tungsten-SemiBold;
-          &:nth-last-child(1){
-            text-align: left;
-          }
+          padding: 0rem 2rem;
+          font-size: 1.5rem;
+          letter-spacing: .5px;
         }
         th {
-          border: 3px solid $color-purpleBg2;
-          background-color: $color-purpleBg2;
-          color: $color-white;
-          font-size: 2.5rem;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          font-family: Tungsten-Book;
-          position: relative;
+          font-size: 1.8rem;
           span {
-            position: absolute;
-            left: 1rem;
+            left: 0;
             top: 0;
             img {
-              width: 75%;
+              width: 60%;
             }
           }
           &:first-child {
-            width: 75%;
+            width: 65%;
           }
         }
         #date {
-          text-align: left;
-          padding-left: 2rem;
-          color: $color-grayDark;
+          text-align: center;
+          padding-left: 0;
         }
       }
     }
     .content_box {
-      width: 56%;
-      margin: 6rem auto 1rem;
-      overflow: hidden;
+      width: 80%;
+      margin: 3rem auto 1rem;
       .header {
-        display: flex;
-        background-color: $color-purpleBg2;
-        color: $color-white;
-        padding: .8rem 2rem;
+        padding: .8rem 1rem;
         span {
-          position:relative;
-          padding-right: 8rem;
+          padding-right: 3rem;
           img#casa {
-            position: absolute;
-            top: -4px;
-            left: -.7rem;
-            width: 4rem;
-          }
-          img#dog {
-            position: absolute;
-            top: -6px;
-            left: -.7rem;
-            width: 3.4rem;
-          }
-          img#corazon {
-            position: absolute;
-            top: -5px;
-            left: -.7rem;
             width: 3.2rem;
           }
-        }
-      }
-      .p-tableI {
-        padding: .5rem .5rem; 
-        text-align: justify;
-      }
-      .p-tableI, .p-tableD, a {
-        color: $color-grayDarkText;
-      }
-      .p-tableD {
-        text-align:center;
-        padding: 1rem 0;
-        a {
-          padding: 0 1rem;
+          img#dog {
+            width: 2.7rem;
+          }
+          img#corazon {
+            width: 2.5rem;
+          }
         }
       }
       .content_map {
-        height: 50rem;
-      }
-      .wp_mapa {
-        width:56% !important;
-        height: 40rem !important;
-        margin:auto !important;
+        height: 30rem;
       }
     }
   }
