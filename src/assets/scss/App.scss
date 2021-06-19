@@ -1,522 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-
-/* ---- Variables ---- */
-$color-yellowBg: #FDBE34;
-$color-greenLBg: #57C09E;
-$color-purpleBg: #875AA6;
-$color-purpleBg2: #A05FA6;
-$color-violetBg: #C44B9C;
-$color-grayBg: #B9B8BC;
-$color-grayLBg: #E4E9E6;
-$color-grayLgBg2: #DCDCDE;
-$color-grayHeaderBg: #F3F2F2;
-$color-grayDarkBg: #5C5B5D;
-$color-yellowO: rgba(246, 177, 0, .5);
-$color-grayMenu: #B9B8BC;
-
-$color-white: #FFFFFF;
-$color-yellowText: #FDBE34;
-$color-yellowText2: #F6B100;
-$color-orangeText: #F15A36;
-$color-redText: #EF4627;
-$color-grayIcon: #AEAEB1;
-$color-grayDarkText: #5F5F63;
-$color-grayDark: #231F20;
-$color-green: #AEC81B;
-
-$color-orangeBtn: #F15A36;
-$color-greenBtn: #64BC45;
-
-/* Fonts */
-@font-face {
-  font-family: Tungsten-Black;
-  src: url('../fonts/Tungsten\ Rounded\ Black.otf');
-}
-@font-face {
-  font-family: Tungsten-Bold;
-  src: url('../fonts/Tungsten\ Rounded\ Bold.otf');
-}
-@font-face {
-  font-family: Tungsten-SemiBold;
-  src: url('../fonts/Tungsten\ Rounded\ SemiBold.otf');
-}
-@font-face {
-  font-family: Tungsten-Medium;
-  src: url('../fonts/Tungsten\ Rounded\ Medium.otf');
-}
-@font-face {
-  font-family: Tungsten-Book;
-  src: url('../fonts/Tungsten\ Rounded\ Book.otf');
-}
-@font-face {
-  font-family: Tungsten-Light;
-  src: url('../fonts/Tungsten\ Rounded\ Light.otf');
-}
-/* bg-color */
-.gb-gray {
-  background-color: $color-grayLBg;
-}
-.gb-grayDark {
-  background-color: $color-grayDarkBg;
-}
-.bg-grayL {
-  background-color: $color-grayLgBg2;
-}
-
-/* --- Estilos para textos --- */
-.text-yellow {
-  color: $color-yellowText;
-}
-.text-yellow2 {
-  color: $color-yellowText2;
-}
-.font-SemiBold {
-  font-family: Tungsten-SemiBold !important;
-}
-
-.p-menu {
-  margin: 0 auto;
-  padding: 0;
-  font-size: 2.4rem;
-  line-height: 1.4;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  font-family: Tungsten-SemiBold;
-  @media (max-width:767px) {
-
-  }
-}
-.super-title {
-  font-size: 4rem;
-  line-height: 1;
-  letter-spacing: 3px;
-  font-family: Tungsten-Bold;
-  margin: 0;
-  @media (max-width:767px) {
-    font-size: 3rem;
-  }
-}
-.p-principal {
-  margin: 0 auto;
-  padding: 0;
-  font-size: 1.9rem;
-  line-height: 1.1;
-  letter-spacing: 1.5px;
-  font-family: Tungsten-Medium;
-  span {
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: Tungsten-SemiBold;
-  }
-  @media (max-width:767px) {
-    font-size: 1.5rem;
-    span {
-      font-size: 1.6rem;
-    }
-  }
-}
-.title_socio {
-  font-size: 4rem;
-  line-height: 1;
-  letter-spacing: 2px;
-  font-family: Tungsten-SemiBold;
-  span {
-    display: block;
-    line-height: .8;
-    font-size: 6.8rem;
-    font-family: Tungsten-SemiBold;
-  }
-  @media (max-width:767px) {
-    font-size: 2.2rem;
-    font-family: Tungsten-Bold;
-    span {
-      font-size: 3rem;
-      font-family: Tungsten-Bold;
-    }
-  }
-}
-.p-product {
-  margin: 0 auto;
-  padding: 0;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  letter-spacing: 1.5px;
-  font-family: Tungsten-Book;
-  span {
-    color: $color-orangeText;
-    font-family: Tungsten-Bold;
-  }
-  @media (max-width:767px) {
-    font-size: 1rem;
-  }
-}
-.p-dark {
-  color: $color-grayDarkText;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-size: 2.5rem;
-  line-height: 1;
-  letter-spacing: 2px;
-  font-family: Tungsten-Medium;
-  span {
-    font-family: Tungsten-Bold;
-  }
-  @media (max-width:767px) {
-    letter-spacing: 1px;
-    font-size: 1.5rem;
-  }
-}
-.p-circle {
-  color: $color-orangeText;
-  margin: 0;
-  padding: 0;
-  font-size: 2.6rem;
-  line-height: 1;
-  letter-spacing: 3px;
-  font-family: Tungsten-Bold;
-  span {
-    font-family: Tungsten-SemiBold;
-  }
-  @media (max-width:767px) {
-    font-size: 1.6rem;
-  }
-}
-.title_peludo {
-  font-size: 4rem;
-  line-height: 1;
-  letter-spacing: 2px;
-  font-family: Tungsten-SemiBold;
-  span {
-    line-height: .8;
-    font-size: 6.8rem;
-  }
-  @media (max-width:767px) {
-    font-size: 3rem;
-    span {
-      font-size: 5rem;
-    }
-  }
-}
-.subtitle_peludo {
-  margin: 0;
-  font-size: 4.1rem;
-  line-height: 1;
-  letter-spacing: 2px;
-  font-family: Tungsten-SemiBold;
-  @media (max-width:767px) {
-    font-family: Tungsten-Bold;
-    font-size: 3rem;
-  }
-}
-.p_peludo {
-  margin: 0;
-  padding: 0;
-  font-size: 2.9rem;
-  text-align: center;
-  line-height: 1.1;
-  letter-spacing: 2px;
-  font-family: Tungsten-Medium;
-  @media (max-width:767px) {
-    font-size: 1.9rem;
-    letter-spacing: 1px;
-  }
-}
-.title_contact {
-  font-size: 3.3rem;
-  line-height: 1.4;
-  letter-spacing: 1px;
-  font-family: Tungsten-SemiBold;
-  span {
-    display: block;
-    line-height: .8;
-    font-size: 4.4rem;
-    font-family: Tungsten-SemiBold;
-  }
-  @media (max-width:767px) {
-    font-size: 2.2rem;
-    span {
-      font-size: 2.6rem;
-    }
-  }
-}
-.subtitle_contact {
-  font-size: 2.4rem;
-  letter-spacing: 1px;
-  line-height: 1;
-  font-family: Tungsten-SemiBold;
-  span {
-    display: block;
-    line-height: .8;
-    font-size: 2.5rem;
-    font-family: Tungsten-Bold;
-  }
-  @media (max-width:767px) {
-    font-size: 1.8rem;
-    span {
-      font-size: 2rem;
-    }
-  }
-}
-.p_contacto {
-  margin: 0;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  line-height: 1.2;
-  font-family: Tungsten-Book;
-  @media (max-width:767px) {
-    font-size: 1.5rem;
-  }
-}
-.p-nota{ 
-  margin: 0;
-  padding: 0;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 1.1;
-  letter-spacing: 1px;
-  font-family: Tungsten-Book;
-  span {
-    letter-spacing: 1px;
-    font-family: Tungsten-Black;
-
-  }
-  @media (max-width:767px) {
-    font-size: 1.3rem;
-  }
-}
-.title_footer {
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  font-family: Tungsten-Medium;
-  @media (max-width:767px) {
-    font-size: 1rem;
-  }
-}
-.p-footer {
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  line-height: 1;
-  font-family: Tungsten-SemiBold;
-  @media (max-width:767px) {
-    font-size: 0.8rem;
-    line-height: 2;
-  }
-}
-
-.title_hola {
-  font-size: 5.5rem;
-  letter-spacing: 3px;
-  font-family: Tungsten-Bold;
-  span {
-    font-size: 5rem;
-    font-family: Tungsten-Medium;
-    display: block;
-  }
-  @media (max-width:767px) {
-    font-size: 4rem;
-    span {
-      font-size: 4rem;
-    }
-  }
-}
-.title_text {
-  font-size: 3.3rem;
-  letter-spacing: 3px;
-  font-family: Tungsten-Medium;
-  @media (max-width:767px) {
-    font-size: 2.8rem;
-  }
-}
-.p-text {
-  font-size: 2.5rem;
-  letter-spacing: 3px;
-  line-height: 1;
-  font-family: Tungsten-Book;
-  @media (max-width:767px) {
-    font-size: 2rem;
-    br {
-      display: none;
-    }
-  }
-}
-.title_info {
-  font-size: 2.8rem;
-  line-height: 1.1;
-  letter-spacing: 2px;
-  font-family: Tungsten-Book;
-  @media (max-width:767px) {
-    font-size: 2rem;
-  }
-}
-.p-info {
-  font-size: 4.1rem;
-  letter-spacing: 3px;
-  line-height: 1;
-  font-family: Tungsten-Bold;
-  @media (max-width:767px) {
-    font-size: 2.5rem;
-  }
-}
-.title_tabla {
-  margin: 0;
-  padding: 0;
-  font-size: 2.5rem;
-  letter-spacing: 3px;
-  line-height: 1;
-  font-family: Tungsten-SemiBold;
-  text-transform: uppercase;
-  @media (max-width:767px) {
-    font-size: 1.8rem;
-  }
-}
-.p-tableI {
-  font-size: 2.8rem;
-  letter-spacing: 1px;
-  line-height: 1;
-  font-family: Tungsten-Book;
-  @media (max-width:767px) {
-    font-size: 1.4rem;
-    line-height: 1.1;
-  }
-}
-.p-tableD {
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  line-height: 1.1;
-  font-family: Tungsten-Bold;
-  @media (max-width:767px) {
-    font-size: 1.5rem;
-  }
-}
-
-
-.titleMascotas {
-  font-size: 5rem;
-  letter-spacing: 3px;
-  line-height: 1;
-  font-family: Tungsten-SemiBold;
-}
-.titleCard {
-  font-size: 3rem;
-  letter-spacing: 1px;
-  line-height: 1;
-  font-family: Tungsten-SemiBold;
-}
-
-/* ---- Btns ---- */
-.btnOrange_sm {
-  margin: 1rem auto;
-  width: fit-content;
-  padding: .1rem 1.5rem .3rem;
-  background-color: $color-orangeBtn;
-  border-radius: .7rem;
-  .text_btnO{
-    color: $color-white;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-size: 1.9rem;
-    text-align: center;
-    line-height: 1;
-    letter-spacing: 2px;
-    font-family: Tungsten-Light;
-  }
-  @media (max-width:767px) {
-    .text_btnO{
-      font-size: 1.7rem;
-    }
-  }
-}
-.btnOrange_lg {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  width: 75%;
-  padding: .2rem 0;
-  background-color: $color-orangeBtn;
-  border-radius: .9rem;
-  .text_btnO{
-    color: $color-white;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-size: 2.2rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-family: Tungsten-SemiBold;
-  }
-  @media (max-width:767px) {
-    border-radius: 1rem;
-    padding: .1rem 0;
-    .text_btnO{
-      font-size: 1.5rem;
-    }
-  }
-}
-.btnGreen_xl {
-  width: fit-content;
-  margin: auto;
-  padding: 0 5rem;
-  background-color: $color-greenBtn;
-  border-radius: .9rem;
-  border: 3px solid $color-white;
-  .text_btnO{
-    color: $color-white;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-size: 2.2rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-family: Tungsten-SemiBold;
-  }
-  @media (max-width:767px) {
-    padding: 0;
-    .text_btnO {
-      font-size: 1.3rem;
-    }
-    width: 55%;
-  }
-}
-.btnGreen_sm {
-  width: fit-content;
-  margin: auto auto 6rem;
-  padding: .2rem 2.5rem;
-  background-color: $color-greenBtn;
-  border-radius: .9rem;
-  border: 3px solid $color-white;
-  .text_btnO{
-    color: $color-white;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-size: 1.9rem;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.1;
-    letter-spacing: 3px;
-    font-family: Tungsten-SemiBold;
-  }
-  @media (max-width:767px) {
-    border-radius: .6rem;
-    padding: .3rem 2.5rem;
-    .text_btnO{
-      letter-spacing: 1px;
-      font-size: 1.2rem;
-    }
-  }
-}
-.btnGreen_sm, .btnGreen_xl, .btnOrange_lg, .btnOrange_sm {
-  a {
-    color: $color-white;
-    text-decoration: none;
-  }
-}
-/* ------------------------- */
+@import "../../index.scss";
 
 .content {
   width: 100%;
@@ -2024,12 +1507,12 @@ $color-greenBtn: #64BC45;
     }
     .shapeI {
       position: absolute;
-      top: 5rem;
-      border-bottom: 99vw solid $color-yellowText;
+      top: -48rem;
+      border-bottom: 159vw solid #FDBE34;
       border-left: 18rem solid transparent;
       border-right: 18rem solid transparent;
       height: 100vh;
-      width: 100%;
+      width: 64%;  
       transform: rotate(-90deg);
       z-index: 1;
     }
@@ -2141,9 +1624,275 @@ $color-greenBtn: #64BC45;
   }
   
 }
+@media (max-width:1024px) {
+  #indentificacion.content  {
+    /*  Indentificación  */
+    .second_page {
+      width: 70%;
+      left: calc(50% - 24rem) !important;
+      .container-modal {
+        top: 8rem;
+        left: calc(50% - 25rem);
+        .content_menu {
+          width: 80%;
+        }
+      }
+      .container-navmenu {
+        z-index: 2;
+      }
+    }
+
+    /* Seccion Hola */
+  .container_hola {
+    .card_foto {
+      width: 35%;
+      height: 20rem;
+    }
+    .p-text {
+      width: 70%;
+      margin: auto;
+      color: $color-grayDark;
+      br {
+        display: none;
+      }
+    }
+
+  }
+
+    /* Seccion Info Mascota */
+    .container_info {
+      #foto3 {
+        margin-top: 7rem;
+      }
+      .content_infoPerrito {
+        .title_info {
+          width: 35% !important;
+          br {
+            display: none;
+          }
+        }
+        #description {
+          right: 2rem;
+          top: 0rem;
+          p {
+            font-size: 1.1rem;
+          }
+          img {
+            height: 16rem;
+          }
+        }
+      }
+      .shapeI {
+        top: -60rem;
+        border-bottom: 354vw solid #FDBE34;
+        border-left: 18rem solid transparent;
+        border-right: 18rem solid transparent;
+        height: 0;
+        width: 94%;
+      }
+    }
+  }
+}
+@media (max-width:768px) {
+  #indentificacion.content  {
+    /*  Indentificación  */
+    .second_page {
+      width: 70%;
+      left: calc(50% - 18rem) !important;
+      .container-modal {
+        top: 8rem;
+        left: calc(50% - 19.5rem);
+        .content_menu {
+          width: 80%;
+        }
+      }
+      .container-navmenu {
+        z-index: 2;
+      }
+    }
+
+    /* Seccion Hola */
+    .container_hola {
+      margin-top: 8.5rem;
+      .card_foto {
+        width: 40%;
+        height: 20rem;
+        .fixed_wapp {
+          right: -9rem;
+        }
+      }
+      .title_text {
+        width: 50%;
+        margin: auto;
+      }
+      .p-text {
+        width: 55%;
+        margin: auto;
+        color: $color-grayDark;
+        br {
+          display: none;
+        }
+      }
+
+    }
+
+    /* Seccion Info Mascota */
+    .container_info {
+      .circle_foto {
+        margin: 4rem auto 6rem;
+        width: 16rem;
+        height: 16rem;
+        .placeholder_foto {
+          font-size: 1.5rem;
+        }
+      }
+      #foto3 {
+        margin-top: 6rem;
+      }
+      .content_infoPerrito {
+        .title_info, .p-info {
+          width: 50%;
+          margin-bottom: 2rem;
+        }
+        .title_info {
+          br {
+            display: none;
+          }
+        }
+        .p-info {
+          margin-bottom: 2rem;
+        }
+        #description {
+          right: 0rem;
+          top: 1rem;
+          p {
+            font-size: 1rem;
+          }
+          img {
+            height: 14rem;
+          }
+        }
+      }
+      .shapeI {
+        top: -39rem;
+        border-bottom: 354vw solid #FDBE34;
+        border-left: 18rem solid transparent;
+        border-right: 18rem solid transparent;
+        height: 0;
+        width: 110%;
+      }
+    }
+    .container_tables {
+      height:inherit;
+      margin-bottom: 8rem;
+      .table_vacunas {
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+        .content_table {
+          margin: auto;
+          width: 40rem;
+          background-color: $color-white;
+          text-align: center;
+          td {
+            padding: .5rem 2rem;
+            border: 3px solid $color-purpleBg2;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            font-family: Tungsten-SemiBold;
+            &:nth-last-child(1){
+              text-align: left;
+            }
+          }
+          th {
+            border: 3px solid $color-purpleBg2;
+            background-color: $color-purpleBg2;
+            color: $color-white;
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-family: Tungsten-Book;
+            position: relative;
+            span {
+              position: absolute;
+              left: 1rem;
+              top: 0;
+              img {
+                width: 75%;
+              }
+            }
+            &:first-child {
+              width: 75%;
+            }
+          }
+          #date {
+            text-align: left;
+            padding-left: 2rem;
+            color: $color-grayDark;
+          }
+        }
+      }
+      .content_box {
+        width: 56%;
+        margin: 6rem auto 1rem;
+        overflow: hidden;
+        .header {
+          display: flex;
+          background-color: $color-purpleBg2;
+          color: $color-white;
+          padding: .8rem 2rem;
+          span {
+            position:relative;
+            padding-right: 8rem;
+            img#casa {
+              position: absolute;
+              top: -4px;
+              left: -.7rem;
+              width: 4rem;
+            }
+            img#dog {
+              position: absolute;
+              top: -6px;
+              left: -.7rem;
+              width: 3.4rem;
+            }
+            img#corazon {
+              position: absolute;
+              top: -5px;
+              left: -.7rem;
+              width: 3.2rem;
+            }
+          }
+        }
+        .p-tableI {
+          padding: .5rem .5rem; 
+          text-align: justify;
+        }
+        .p-tableI, .p-tableD, a {
+          color: $color-grayDarkText;
+        }
+        .p-tableD {
+          text-align:center;
+          padding: 1rem 0;
+          a {
+            padding: 0 1rem;
+          }
+        }
+        .content_map {
+          height: 50rem;
+        }
+        .wp_mapa {
+          width:56% !important;
+          height: 40rem !important;
+          margin:auto !important;
+        }
+      }
+    }
+  }
+}
 @media (max-width:767px) {
   #indentificacion.content {
     width: 100%;
+    // padding: 0;
     overflow-x: hidden;
     .second_page {
       width: 100% !important;
@@ -2206,8 +1955,8 @@ $color-greenBtn: #64BC45;
       }
       #description {
         position: absolute;
-        right:calc(50% - 4.5rem);
-        top: 17rem;
+        right:calc(50% - 5rem);
+        top: 24rem;
         p {
           font-size: 1.1rem;
           letter-spacing: .2px;
@@ -2222,15 +1971,12 @@ $color-greenBtn: #64BC45;
       }
     }
     .shapeI {
-      position: absolute;
-      top: -8rem;
-      border-bottom: 374vw solid $color-yellowText;
+      top: -4rem;
+      border-bottom: 368vw solid #FDBE34;
       border-left: 18rem solid transparent;
       border-right: 18rem solid transparent;
-      height: 100vh;
-      width: 350%;
-      transform: rotate(-90deg);
-      z-index: 1;
+      height: 0;
+      width: 217%;
     }
   }
   .container_tables {
@@ -2290,6 +2036,8 @@ $color-greenBtn: #64BC45;
   }
   }
 }
+
+
 
 #misMascotas.content {
   height: 100vh;
