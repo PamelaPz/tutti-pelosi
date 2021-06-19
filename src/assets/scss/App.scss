@@ -1,9 +1,9 @@
-@import "~bootstrap/scss/bootstrap";
 @import "../../index.scss";
 
 .content {
   width: 100%;
   margin-top: 7rem;
+  overflow-x: hidden;
   
   .section {
     margin: 0 1rem;

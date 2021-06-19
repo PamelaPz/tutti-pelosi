@@ -10,7 +10,7 @@ function SectionGray() {
   return(
     <>
       <Row>
-        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-end">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-end p-0">
             <div className="content_producto">
                 <div className="img_center"><img src={medalla1} alt=""/></div>
                 <div className="content_text">
@@ -19,7 +19,7 @@ function SectionGray() {
                 </div>
             </div>
         </Col>
-        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-start">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-start p-0">
             <div className="content_producto">
                 <div className="img_center"><img src={medalla1} alt=""/></div>
                 <div className="content_text">
@@ -30,7 +30,7 @@ function SectionGray() {
         </Col>
       </Row>
       <Row>
-        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-end reset_width">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-end reset_width p-0">
             <div className="content_producto">
                 <div className="img_center"><img src={producto3} alt="" id="bones"/></div>
                 <div className="content_text reset_p">
@@ -39,7 +39,7 @@ function SectionGray() {
                 </div>
             </div>
         </Col>
-        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-start">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-start p-0">
             <div className="content_producto">
                 <div className="img_center"><img src={producto4} alt="" id="carnaza"/></div>
                 <div className="content_text reset_p">
@@ -50,7 +50,7 @@ function SectionGray() {
         </Col>
       </Row>
       <Row>
-        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-end pt-lg-5">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-end pt-lg-5 p-0">
             <div className="content_producto">
                 <div className="img_center"><img src={producto1} alt="" id="pollo"/></div>
                 <div className="content_text reset_p">
@@ -59,7 +59,7 @@ function SectionGray() {
                 </div>
             </div>
         </Col>
-        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-start pt-lg-5">
+        <Col lg={6} xs={6} className="gb-gray d-flex justify-content-md-start pt-lg-5 p-0">
             <div className="content_producto">
                 <div className="img_center"><img src={producto6} alt="" id="colageno"/></div>
                 <div className="content_text reset_p">
