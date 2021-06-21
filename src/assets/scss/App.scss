@@ -782,6 +782,8 @@
   
     .content_info {
       padding-top: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
       padding-bottom: 2rem;
       align-items: center;
       .content_text {
@@ -829,6 +831,7 @@
             margin-top: 1rem;
           }
         }
+        
       }
       .img_right {
         img{
@@ -866,13 +869,13 @@
           width: 100% !important;
           justify-content: space-evenly !important;
           .super-title {
-            width: 80%;
+            width: 75%;
             margin: auto;
             font-size: 3.5rem;
           }
           .p-principal {
-            width: 60%;
-            font-size: 1.9rem;
+            width: 58%;
+            font-size: 2rem;
           }
         }
       }
@@ -994,10 +997,11 @@
       }
     }
   
-    /* ---- Sección gris de productos ---- */
+    /* Sección gris de productos */
     .content_producto {
       width: 100%;
       height: 22rem;
+      padding: 0 1.5rem;
       .img_center {
         img {
           width: 70%;
@@ -1056,82 +1060,83 @@
     }
   
     /* Seccion placa */
-    .content_placa {
-      padding-bottom: 0;
-      grid-template-columns: 1fr;
-      grid-template: 
-        "cel" 21rem
-        "centerT" auto
-      ;
-      .img_left {
-        grid-area: cel;
-        padding: 0;
-        img {
-          width: 55%;
-          position: relative;
-          top: -4rem;
-          left: calc(50% - 111px)
-        }
-      }
-      
-      .content_center {
-        grid-area: centerT;
-        width: 100%;
-        .content_text {
-          left: 0;
-          display:flex;
-          justify-content:center;
-          align-items: center;
-          flex-direction: column-reverse;
-          .title_socio {
-            font-size: 2.5rem;
-            width: 55%;
-            margin: auto;
-            font-family: Tungsten-SemiBold;
-            span {
-              font-size: 4.5rem;
-              font-family: Tungsten-SemiBold;
-
-            }
-          }
-          .img_up {
-            width: 100%;
-            height: 10rem;
-            margin-bottom: 3rem;
-            img {
-              position: relative;
-              left: calc(50% - 160px);
-              top: 0;
-              width: 19rem;
-            }
-          }
-          #medalla-qr {
-            height: fit-content;
-            img{
-              position: relative;
-              top: 1.5rem;
-              left: 1.5rem;
-              width: 75%;
-            }
-          }
-        }
-      }
-      .shape-text {
-        width: 100%;
-        height: 20rem;
-        background-image: none;
-        .content_ul {
-          position: relative;
-          top: 0;
-          left: 1rem;
-          padding: 1rem 0 1rem 2rem;
-        }
-      }
-      #shape-green.content_placa {
-        display: grid;
+    .container-placa {
+      padding: 0 1rem;
+      .content_placa {
         padding-bottom: 0;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 15rem;
+        grid-template-columns: 1fr ;
+        grid-template: 
+          "cel" 21rem
+          "centerT" auto
+        ;
+        .img_left {
+          grid-area: cel;
+          padding: 0;
+          img {
+            width: 55%;
+            position: relative;
+            top: -4rem;
+            left: calc(50% - 111px)
+          }
+        }
+        
+        .content_center {
+          grid-area: centerT;
+          width: 100%;
+          .content_text {
+            left: 0;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column-reverse;
+            .title_socio {
+              font-size: 2.5rem;
+              width: 55%;
+              margin: auto;
+              font-family: Tungsten-SemiBold;
+              span {
+                font-size: 4.5rem;
+                font-family: Tungsten-SemiBold;
+  
+              }
+            }
+            .img_up {
+              width: 100%;
+              height: 10rem;
+              margin-bottom: 3rem;
+              img {
+                position: relative;
+                left: calc(50% - 160px);
+                top: 0;
+                width: 19rem;
+              }
+            }
+            #medalla-qr {
+              height: fit-content;
+              img{
+                position: relative;
+                top: 1.5rem;
+                left: 1.5rem;
+                width: 75%;
+              }
+            }
+          }
+        }
+        .shape-text {
+          width: 100%;
+          height: 20rem;
+          background-image: none;
+          .content_ul {
+            position: relative;
+            top: 0;
+            left: 1.4rem;
+            width: 80%;
+            // padding: 1rem 1rem 1rem 2rem;
+          }
+        }
+      }
+      .btnGreen_sm {
+        margin-bottom: 2rem;
       }
       .content_circleDog {
         .content_img {
@@ -1157,8 +1162,12 @@
           }
         }
       }
-      .btnGreen_sm {
-        margin-bottom: 2rem;
+
+      #shape-green.content_placa {
+        display: grid;
+        padding-bottom: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 15rem;
       }
     }
     .shape {
@@ -1184,13 +1193,19 @@
     
     /* Sección verde */
     .container-peludo {
+      // padding: 0 1rem;
       .subtitle_peludo, .p_peludo {
         padding: 0 2rem;
       }
       .content-title {
         .content_text {
-          padding: 4rem 0 3rem;
+          padding: 4rem 0rem 3rem;
           color: $color-white;
+        }
+      }
+      .content-subtitle {
+        .content_text {
+          padding: 0 1rem;
         }
       }
       .content-gridImg {
@@ -1219,7 +1234,7 @@
             position: absolute;
             width: 18rem;
             top: 0;
-            left: -2rem;
+            left: -1rem;
           }
           img#img_center {
             grid-area: img_center;
@@ -1228,9 +1243,12 @@
             padding: 0;
             margin: 0;
             top: 0;
-            right: -2rem;
+            right: -1rem;
           }
         }
+      }
+      .btnGreen_xl {
+        margin-top: 4rem;
       }
     }
     .bg_yellow-sm {
@@ -1294,6 +1312,7 @@
             width: 100%;
             height: 14rem;
             #img_dogs {
+              width: 83%;
               display: block;
               left: calc(50% - 12.5rem);
               padding: 0 2rem;
@@ -1312,7 +1331,8 @@
         padding-bottom: 1rem;
         grid-template-columns: 1fr;
         .content_form {
-          width: 69%;
+          width: fit-content;
+          width: 90vw;
           .form-group {
             overflow: hidden;
           }
@@ -1325,6 +1345,7 @@
           }
           button {
             color: #495057;
+            width: 82.5vw;
           }
         }
         .content_text {
@@ -1342,11 +1363,13 @@
             flex-wrap: nowrap;
             width: 100%;
             .icon{
-              // font-size: 2.6rem;
               margin-right: 1rem;
             }
           }
         }
+      }
+      .container_nota {
+        width: 80%;
       }
     }
   
