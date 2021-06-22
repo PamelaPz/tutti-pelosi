@@ -851,17 +851,11 @@
     }
     .section #mayores{
       background-position: left top .5cm, right -.05cm top;
-      background-repeat: no-repeat;
-      background-size: 12%, 20%;
-      position: relative;
       .content_info {
-        .hidden_lg {
-          display: none;
-        }
         .content_text {
           width: 100% !important;
           margin: auto;
-          justify-content: space-around !important;
+          justify-content: space-evenly !important;
           .super-title {
             width: 80%;
             margin: auto;
@@ -874,24 +868,22 @@
         img {
           width: 120%;
           position: absolute;
-          right: -8rem;
-          bottom: 4rem;
+          right: -3rem;
+          bottom: 5rem;
         }
       }
       .img_right {
         position: relative;
         img{
-          width: 70%;
+          width: 80%;
           position: absolute;
-          left: -3rem;
+          left: -2rem;
           bottom: 3.4rem;
         }
       }
-  
     }
     .section #socios{
-      height: 76vh;
-      background-color: $color-white;
+      height: 60vh;
       .content_info {
         padding-top: 0;
         grid-template-columns: repeat(2, 1fr);

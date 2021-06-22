@@ -416,15 +416,9 @@ $color-greenBtn: #64BC45;
     }
   }
   .title_socio {
-    font-size: 4rem;
-    line-height: 1;
-    letter-spacing: 2px;
-    font-family: Tungsten-SemiBold;
+    font-size: 3rem;
     span {
-      display: block;
-      line-height: .8;
-      font-size: 6.8rem;
-      font-family: Tungsten-SemiBold;
+      font-size: 5rem;
     }
   }
   .p-product {
@@ -623,22 +617,9 @@ $color-greenBtn: #64BC45;
     }
   }
   .btnOrange_lg {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    width: 75%;
-    padding: .2rem 0;
-    background-color: $color-orangeBtn;
-    border-radius: .9rem;
+    width: 100%;
     .text_btnO{
-      color: $color-white;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      font-size: 2.2rem;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-family: Tungsten-SemiBold;
+      font-size: 2rem;
     }
   }
   .btnGreen_xl {
